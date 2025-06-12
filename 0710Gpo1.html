@@ -1,0 +1,1252 @@
+{\rtf1\ansi\ansicpg950\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red71\green138\blue206;
+\red141\green213\blue254;\red203\green203\blue202;\red109\green109\blue109;\red194\green125\blue100;\red212\green212\blue212;
+\red167\green197\blue151;\red112\green192\blue130;\red109\green115\blue120;\red184\green113\blue248;\red245\green123\blue47;
+\red54\green192\blue160;\red163\green79\blue131;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c34146\c61677\c84338;
+\cssrgb\c61545\c86704\c99884;\cssrgb\c83320\c83320\c83112;\cssrgb\c50307\c50306\c50181;\cssrgb\c80772\c56796\c46790;\cssrgb\c86465\c86464\c86248;
+\cssrgb\c71035\c80830\c65726;\cssrgb\c50437\c78684\c58115;\cssrgb\c50336\c52696\c54531;\cssrgb\c77746\c54642\c98035;\cssrgb\c97756\c56070\c23668;
+\cssrgb\c23989\c78963\c69075;\cssrgb\c70673\c40065\c58366;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh7240\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 <!DOCTYPE\strokec5  html\strokec4 >\strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec7 <\strokec4 html\strokec6  \strokec5 lang\strokec7 =\strokec8 "zh-TW"\strokec7 >\strokec6 \
+\strokec7 <\strokec4 head\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 meta\strokec6  \strokec5 charset\strokec7 =\strokec8 "UTF-8"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 meta\strokec6  \strokec5 name\strokec7 =\strokec8 "viewport"\strokec6  \strokec5 content\strokec7 =\strokec8 "width=device-width, initial-scale=1.0"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 title\strokec7 >\strokec6 \uc0\u25171 \u36896 AI\u31070 \u21161 \u29702 \u65292 \u24478 NotebookLM\u38283 \u22987 \strokec7 </\strokec4 title\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 href\strokec7 =\strokec8 "https://cdn.jsdelivr.net/npm/tailwindcss@^3.0/dist/tailwind.min.css"\strokec6  \strokec5 rel\strokec7 =\strokec8 "stylesheet"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 rel\strokec7 =\strokec8 "stylesheet"\strokec6  \strokec5 href\strokec7 =\strokec8 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 script\strokec6  \strokec5 src\strokec7 =\strokec8 "https://cdn.jsdelivr.net/npm/chart.js"\strokec7 ></\strokec4 script\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 script\strokec6  \strokec5 src\strokec7 =\strokec8 "https://cdn.jsdelivr.net/npm/framer-motion@latest"\strokec7 ></\strokec4 script\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 href\strokec7 =\strokec8 "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mochiy+Pop+One&family=Noto+Sans+TC:wght@400;700;900&display=swap"\strokec6  \strokec5 rel\strokec7 =\strokec8 "stylesheet"\strokec7 >\strokec6 \
+\
+    \strokec7 <\strokec4 style\strokec7 >\strokec6 \
+        \strokec4 body\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background:\strokec6  \strokec8 linear-gradient(\strokec10 135deg\strokec9 ,\strokec6  #1c3a70 \strokec10 0%\strokec9 ,\strokec6  #4a2f6c \strokec10 100%\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #fff\strokec9 ;\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec11 'Noto Sans TC'\strokec9 ,\strokec6  \strokec11 'Inter'\strokec9 ,\strokec6  \strokec8 sans-serif\strokec9 ;\strokec6 \
+            \strokec5 overflow-x:\strokec6  \strokec8 hidden\strokec9 ;\strokec6 \
+            \strokec5 margin:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .presentation-slide\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100vw\strokec9 ;\strokec6 \
+            \strokec5 min-height:\strokec6  \strokec10 100vh\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 3rem\strokec6  \strokec10 2rem\strokec9 ;\strokec6 \
+            \strokec5 box-sizing:\strokec6  \strokec8 border-box\strokec9 ;\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 flex\strokec9 ;\strokec6 \
+            \strokec5 flex-direction:\strokec6  \strokec8 column\strokec9 ;\strokec6 \
+            \strokec5 justify-content:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+            \strokec5 align-items:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 relative\strokec9 ;\strokec6 \
+            \strokec5 overflow:\strokec6  \strokec8 hidden\strokec9 ;\strokec6 \
+            \strokec5 text-align:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .presentation-slide\strokec6  \strokec9 >\strokec6  \strokec4 .slide-content\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 relative\strokec9 ;\strokec6 \
+            \strokec5 z-index:\strokec6  \strokec10 1\strokec9 ;\strokec6  \strokec12 /* Ensure content is above confetti canvas */\strokec6 \
+            \strokec5 max-width:\strokec6  \strokec10 900px\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.25\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 2.5rem\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 1.25rem\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 10px\strokec6  \strokec10 30px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.35\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .slide-title\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 2.8rem\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 700\strokec9 ;\strokec6 \
+            \strokec5 margin-bottom:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #f0f0f0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \
+        \strokec4 .slide-subtitle\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 500\strokec9 ;\strokec6 \
+            \strokec5 margin-bottom:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #d0d0d0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .slide-text\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 1.1rem\strokec9 ;\strokec6 \
+            \strokec5 line-height:\strokec6  \strokec10 1.8\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #c0c0c0\strokec9 ;\strokec6 \
+            \strokec5 margin-bottom:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \
+        \strokec4 .info-card\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 inline-block\strokec9 ;\strokec6 \
+            \strokec5 background-color:\strokec6  #007bff\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 white\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.8rem\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 text-decoration:\strokec6  \strokec8 none\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 600\strokec9 ;\strokec6 \
+            \strokec5 margin-top:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+            \strokec5 transition:\strokec6  \strokec8 background-color\strokec6  \strokec10 0.3s\strokec6  \strokec8 ease\strokec9 ,\strokec6  \strokec8 transform\strokec6  \strokec10 0.2s\strokec6  \strokec8 ease\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 4px\strokec6  \strokec10 8px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.2\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #0056b3\strokec9 ;\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 translateY(\strokec10 -2px\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-purple\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #6f42c1\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-purple:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #5a32a3\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-green\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #28a745\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-green:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #1e7e34\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+         \strokec4 .info-card-orange\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #fd7e14\strokec9 ;\strokec6  \strokec12 /* \uc0\u27224 \u33394  */\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-orange:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #e66a00\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-red\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #dc3545\strokec9 ;\strokec6  \strokec12 /* \uc0\u32005 \u33394  */\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .info-card-red:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #c82333\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+\
+        \strokec4 .styled-table\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 margin-top:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 border-collapse:\strokec6  \strokec8 collapse\strokec9 ;\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 0.05\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 overflow:\strokec6  \strokec8 hidden\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .styled-table\strokec6  \strokec4 th\strokec9 ,\strokec6  \strokec4 .styled-table\strokec6  \strokec4 td\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 border:\strokec6  \strokec10 1px\strokec6  \strokec8 solid\strokec6  \strokec8 rgba(\strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 0.2\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.75rem\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+            \strokec5 text-align:\strokec6  \strokec8 left\strokec9 ;\strokec6 \
+            \strokec5 vertical-align:\strokec6  \strokec8 top\strokec9 ;\strokec6  \strokec12 /* \uc0\u34920 \u26684 \u20839 \u23481 \u38914 \u37096 \u23565 \u40778  */\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .styled-table\strokec6  \strokec4 th\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.3\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 600\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #e0e0e0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .styled-table\strokec6  \strokec4 td\strokec6  \strokec4 strong\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 color:\strokec6  #87CEFA\strokec9 ;\strokec6  \strokec12 /* \uc0\u28129 \u34253 \u33394  */\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 700\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .styled-table\strokec6  \strokec4 ul\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 list-style-type:\strokec6  \strokec8 disc\strokec9 ;\strokec6 \
+            \strokec5 padding-left:\strokec6  \strokec10 20px\strokec9 ;\strokec6 \
+            \strokec5 margin:\strokec6  \strokec10 0.5rem\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+         \strokec4 .styled-table\strokec6  \strokec4 code\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 255\strokec9 ,\strokec10 255\strokec9 ,\strokec10 255\strokec9 ,\strokec10 0.1\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.2em\strokec6  \strokec10 0.4em\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 3px\strokec9 ;\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec8 monospace\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .youtube-embed-container\strokec6  \strokec9 \{\strokec6  \strokec12 /* Kept for other slides if any, or future use */\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 relative\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 max-width:\strokec6  \strokec10 560px\strokec9 ;\strokec6 \
+            \strokec5 padding-bottom:\strokec6  \strokec10 56.25%\strokec9 ;\strokec6 \
+            \strokec5 height:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 overflow:\strokec6  \strokec8 hidden\strokec9 ;\strokec6 \
+            \strokec5 margin:\strokec6  \strokec10 1.5rem\strokec6  \strokec8 auto\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 4px\strokec6  \strokec10 15px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.3\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .youtube-embed-container\strokec6  \strokec4 iframe\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 absolute\strokec9 ;\strokec6 \
+            \strokec5 top:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 left:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 height:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 border:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .canva-embed-container\strokec6  \strokec9 \{\strokec6  \
+            \strokec5 position:\strokec6  \strokec8 relative\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 max-width:\strokec6  \strokec10 800px\strokec9 ;\strokec6  \
+            \strokec5 height:\strokec6  \strokec10 600px\strokec9 ;\strokec6  \
+            \strokec5 overflow:\strokec6  \strokec8 hidden\strokec9 ;\strokec6 \
+            \strokec5 margin:\strokec6  \strokec10 1.5rem\strokec6  \strokec8 auto\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 4px\strokec6  \strokec10 15px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.3\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 border:\strokec6  \strokec10 2px\strokec6  \strokec8 solid\strokec6  \strokec8 rgba(\strokec10 255\strokec9 ,\strokec10 255\strokec9 ,\strokec10 255\strokec9 ,\strokec10 0.1\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .canva-embed-container\strokec6  \strokec4 iframe\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 absolute\strokec9 ;\strokec6 \
+            \strokec5 top:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 left:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 height:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 border:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \
+        \strokec4 #navigation-controls\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 fixed\strokec9 ;\strokec6 \
+            \strokec5 bottom:\strokec6  \strokec10 20px\strokec9 ;\strokec6 \
+            \strokec5 left:\strokec6  \strokec10 50%\strokec9 ;\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 translateX(\strokec10 -50%\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 z-index:\strokec6  \strokec10 1000\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.8rem\strokec9 ;\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.7\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.75rem\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 6px\strokec6  \strokec10 18px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.4\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 flex\strokec9 ;\strokec6 \
+            \strokec5 gap:\strokec6  \strokec10 0.8rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 #navigation-controls\strokec6  \strokec4 button\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.6rem\strokec6  \strokec10 1.2rem\strokec9 ;\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 0.9rem\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 600\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 white\strokec9 ;\strokec6 \
+            \strokec5 border:\strokec6  \strokec8 none\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 cursor:\strokec6  \strokec8 pointer\strokec9 ;\strokec6 \
+            \strokec5 transition:\strokec6  \strokec8 background-color\strokec6  \strokec10 0.3s\strokec6  \strokec8 ease\strokec9 ,\strokec6  \strokec8 transform\strokec6  \strokec10 0.2s\strokec6  \strokec8 ease\strokec9 ,\strokec6  \strokec8 opacity\strokec6  \strokec10 0.3s\strokec6  \strokec8 ease\strokec9 ;\strokec6  \strokec12 /* Added opacity transition */\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 flex\strokec9 ;\strokec6 \
+            \strokec5 align-items:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+            \strokec5 gap:\strokec6  \strokec10 0.4rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \
+        \strokec4 #navigation-controls\strokec6  \strokec4 button:disabled\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 opacity:\strokec6  \strokec10 0.4\strokec9 ;\strokec6 \
+            \strokec5 cursor:\strokec6  \strokec8 not-allowed\strokec9 ;\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 none\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+      \
+        \strokec4 #next-slide.return-to-title\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #17a2b8\strokec9 ;\strokec6  \
+        \strokec9 \}\strokec6 \
+        \strokec4 #next-slide.return-to-title:hover:not\strokec6 (\strokec4 :disabled\strokec6 ) \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #138496\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+\
+        \strokec4 #prev-slide\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #6f42c1\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 #prev-slide:hover:not\strokec6 (\strokec4 :disabled\strokec6 ) \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #5a32a3\strokec9 ;\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 translateY(\strokec10 -2px\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 #next-slide\strokec6  \strokec9 \{\strokec6  \
+            \strokec5 background-color:\strokec6  #007bff\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 #next-slide:hover:not\strokec6 (\strokec4 :disabled\strokec6 ) \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #0056b3\strokec9 ;\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 translateY(\strokec10 -2px\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec12 /* \uc0\u19979 \u25289 \u24335 \u36984 \u21934 \u23566 \u35261  */\strokec6 \
+        \strokec4 #slide-selector-container\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 fixed\strokec9 ;\strokec6 \
+            \strokec5 bottom:\strokec6  \strokec10 20px\strokec9 ;\strokec6 \
+            \strokec5 right:\strokec6  \strokec10 20px\strokec9 ;\strokec6 \
+            \strokec5 z-index:\strokec6  \strokec10 1000\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 #slide-select-dropdown\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.7\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 white\strokec9 ;\strokec6 \
+            \strokec5 padding:\strokec6  \strokec10 0.6rem\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 border:\strokec6  \strokec10 1px\strokec6  \strokec8 solid\strokec6  \strokec8 rgba(\strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 255\strokec9 ,\strokec6  \strokec10 0.3\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 0.9rem\strokec9 ;\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec11 'Noto Sans TC'\strokec9 ,\strokec6  \strokec8 sans-serif\strokec9 ;\strokec6 \
+            \strokec5 cursor:\strokec6  \strokec8 pointer\strokec9 ;\strokec6 \
+            \strokec5 transition:\strokec6  \strokec8 background-color\strokec6  \strokec10 0.3s\strokec6  \strokec8 ease\strokec9 ;\strokec6 \
+            \strokec5 max-width:\strokec6  \strokec10 200px\strokec9 ;\strokec6  \strokec12 /* \uc0\u36991 \u20813 \u36942 \u38263  */\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 #slide-select-dropdown:hover\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0\strokec9 ,\strokec6  \strokec10 0.9\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 #slide-select-dropdown\strokec6  \strokec4 option\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  #333\strokec9 ;\strokec6  \strokec12 /* \uc0\u36984 \u38917 \u32972 \u26223 \u33394  */\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 white\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+\
+        \strokec4 .lecturer-info\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec10 111\strokec9 ,\strokec6  \strokec10 66\strokec9 ,\strokec6  \strokec10 193\strokec9 ,\strokec6  \strokec10 0.3\strokec8 )\strokec9 ;\strokec6  \
+            \strokec5 padding:\strokec6  \strokec10 0.75rem\strokec6  \strokec10 1.25rem\strokec9 ;\strokec6 \
+            \strokec5 border-radius:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 inline-block\strokec9 ;\strokec6  \
+            \strokec5 margin-top:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec10 0\strokec6  \strokec10 2px\strokec6  \strokec10 4px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.2\strokec8 )\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .prominent-title\strokec6  \strokec9 \{\strokec6  \
+            \strokec5 font-size:\strokec6  \strokec10 3.5rem\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 900\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #FFD700\strokec9 ;\strokec6  \
+            \strokec5 text-shadow:\strokec6  \strokec10 2px\strokec6  \strokec10 2px\strokec6  \strokec10 5px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.5\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 margin-bottom:\strokec6  \strokec10 2rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+         \strokec4 .mochiy-pop-font\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec11 'Mochiy Pop One'\strokec9 ,\strokec6  \strokec11 'Noto Sans TC'\strokec9 ,\strokec6  \strokec8 sans-serif\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .conclusion-highlight\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 2.2rem\strokec9 ;\strokec6  \
+            \strokec5 font-weight:\strokec6  \strokec10 700\strokec9 ;\strokec6  \
+            \strokec5 color:\strokec6  #FF69B4\strokec9 ;\strokec6  \
+            \strokec5 text-shadow:\strokec6  \strokec10 2px\strokec6  \strokec10 2px\strokec6  \strokec10 4px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.5\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 margin-top:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 line-height:\strokec6  \strokec10 1.5\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 .thank-you-text\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 4.5rem\strokec9 ;\strokec6 \
+            \strokec5 font-weight:\strokec6  \strokec10 900\strokec9 ;\strokec6 \
+            \strokec5 color:\strokec6  #66FF99\strokec9 ;\strokec6 \
+            \strokec5 text-shadow:\strokec6  \strokec10 3px\strokec6  \strokec10 3px\strokec6  \strokec10 6px\strokec6  \strokec8 rgba(\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0\strokec9 ,\strokec10 0.6\strokec8 )\strokec9 ;\strokec6 \
+            \strokec5 margin-bottom:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .thank-you-emoji-container\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 flex\strokec9 ;\strokec6 \
+            \strokec5 justify-content:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+            \strokec5 align-items:\strokec6  \strokec8 center\strokec9 ;\strokec6 \
+            \strokec5 gap:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6 \
+            \strokec5 margin-top:\strokec6  \strokec10 1rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .thank-you-emoji\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 4rem\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+        \strokec4 .beating-heart-hand\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 font-size:\strokec6  \strokec10 4.5rem\strokec9 ;\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 inline-block\strokec9 ;\strokec6 \
+            \strokec5 animation:\strokec6  \strokec8 beat\strokec6  \strokec10 1.5s\strokec6  \strokec8 infinite\strokec6  \strokec8 ease-in-out\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec13 @keyframes\strokec6  \strokec8 beat\strokec6  \strokec9 \{\strokec6 \
+            \strokec10 0%\strokec9 ,\strokec6  \strokec10 100%\strokec6  \strokec9 \{\strokec6  \strokec5 transform:\strokec6  \strokec8 scale(\strokec10 1\strokec8 )\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec10 10%\strokec9 ,\strokec6  \strokec10 30%\strokec6  \strokec9 \{\strokec6  \strokec5 transform:\strokec6  \strokec8 scale(\strokec10 0.9\strokec8 )\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec10 20%\strokec9 ,\strokec6  \strokec10 40%\strokec9 ,\strokec6  \strokec10 60%\strokec9 ,\strokec6  \strokec10 80%\strokec6  \strokec9 \{\strokec6  \strokec5 transform:\strokec6  \strokec8 scale(\strokec10 1.1\strokec8 )\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec10 50%\strokec9 ,\strokec6  \strokec10 70%\strokec9 ,\strokec6  \strokec10 90%\strokec6  \strokec9 \{\strokec6  \strokec5 transform:\strokec6  \strokec8 scale(\strokec10 1.05\strokec8 )\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        \strokec4 #confetti-canvas\strokec6  \strokec9 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 absolute\strokec9 ;\strokec6 \
+            \strokec5 top:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 left:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 height:\strokec6  \strokec10 100%\strokec9 ;\strokec6 \
+            \strokec5 pointer-events:\strokec6  \strokec8 none\strokec9 ;\strokec6 \
+            \strokec5 z-index:\strokec6  \strokec10 0\strokec9 ;\strokec6 \
+        \strokec9 \}\strokec6 \
+\
+        @\strokec4 media\strokec6  (\strokec4 max-width:\strokec6  768\strokec4 px\strokec6 ) \strokec9 \{\strokec6 \
+            .presentation-slide \{ \strokec5 padding:\strokec6  \strokec10 2rem\strokec6  \strokec10 1rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .slide-content\strokec6  \strokec9 \{\strokec6  \strokec5 padding:\strokec6  \strokec10 1.5rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .slide-title\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 2rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .prominent-title\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 2.5rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .slide-subtitle\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 1.2rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .slide-text\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 1rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .info-card\strokec6  \strokec9 \{\strokec6  \strokec5 padding:\strokec6  \strokec10 0.7rem\strokec6  \strokec10 1.2rem\strokec9 ;\strokec6  \strokec5 font-size:\strokec6  \strokec10 0.9rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .styled-table\strokec6  \strokec4 th\strokec9 ,\strokec6  \strokec4 .styled-table\strokec6  \strokec4 td\strokec6  \strokec9 \{\strokec6  \strokec5 padding:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6  \strokec5 font-size:\strokec6  \strokec10 0.8rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 #navigation-controls\strokec6  \strokec9 \{\strokec6  \strokec5 bottom:\strokec6  \strokec10 10px\strokec9 ;\strokec6  \strokec5 padding:\strokec6  \strokec10 0.6rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 #navigation-controls\strokec6  \strokec4 button\strokec6  \strokec9 \{\strokec6  \strokec5 padding:\strokec6  \strokec10 0.5rem\strokec6  \strokec10 1rem\strokec9 ;\strokec6  \strokec5 font-size:\strokec6  \strokec10 0.8rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .conclusion-highlight\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 1.6rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .thank-you-text\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 3rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .thank-you-emoji\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 3rem\strokec9 ;\strokec6   \strokec9 \}\strokec6 \
+            \strokec4 .beating-heart-hand\strokec6  \strokec9 \{\strokec6  \strokec5 font-size:\strokec6  \strokec10 3.5rem\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 .canva-embed-container\strokec6  \strokec9 \{\strokec6  \strokec5 height:\strokec6  \strokec10 450px\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 #slide-selector-container\strokec6  \strokec9 \{\strokec6  \strokec5 right:\strokec6  \strokec10 10px\strokec9 ;\strokec6  \strokec5 bottom:\strokec6  \strokec10 70px\strokec9 ;\strokec6  \strokec12 /* \uc0\u35519 \u25972 \u25163 \u27231 \u29256 \u19979 \u25289 \u36984 \u21934 \u20301 \u32622 \u65292 \u36991 \u20813 \u33287 \u25353 \u37397 \u37325 \u30090  */\strokec6  \strokec9 \}\strokec6 \
+            \strokec4 #slide-select-dropdown\strokec6  \strokec9 \{\strokec6  \strokec5 padding:\strokec6  \strokec10 0.5rem\strokec9 ;\strokec6  \strokec5 font-size:\strokec6  \strokec10 0.8rem\strokec9 ;\strokec6  \strokec5 max-width:\strokec6  \strokec10 150px\strokec9 ;\}\strokec6 \
+        \}\
+    \strokec7 </\strokec4 style\strokec7 >\strokec6 \
+\strokec7 </\strokec4 head\strokec7 >\strokec6 \
+\strokec7 <\strokec4 body\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  1: \u27161 \u38988 \u38913  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56960  \u25171 \u36896 AI\u31070 \u21161 \u29702 \u65292 \u24478 NotebookLM\u38283 \u22987  \u55357 \u56960 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "lecturer-info"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem; margin: 0; color: #f0f0f0;"\strokec7 >\strokec6 \
+                    \uc0\u35611 \u24107 \u65306 Gloria\u21555 \u31168 \u34349 \u32769 \u24107 \strokec7 <\strokec4 br\strokec7 >\strokec6 \
+                    Google \uc0\u35469 \u35657 \u35611 \u24107 \
+                \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.1rem; margin-top: 0.5rem;"\strokec7 >\strokec6 \uc0\u22283 \u31435 \u26366 \u25991 \u36786 \u24037  \u33521 \u25991 \u20860 \u21488 \u35486 \u25945 \u24107 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  2: \u35611 \u24107 \u20171 \u32057  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec7 >\strokec6 \uc0\u55356 \u57119  \u35611 \u24107 \u20171 \u32057  \u55356 \u57119 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u35731 \u25105 \u20497 \u26356 \u35469 \u35672 \u20170 \u22825 \u30340 \u35611 \u24107  Gloria \u21555 \u31168 \u34349 \u32769 \u24107 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtu.be/V6uc2s51dxw"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem; font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u35264 \u30475 \u35611 \u24107 \u20171 \u32057 \u24433 \u29255  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-youtube"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 0.8rem; margin-top: 1rem;"\strokec7 >\strokec6 \uc0\u65288 \u40670 \u25802 \u19978 \u26041 \u25353 \u37397 \u35264 \u30475 \u24433 \u29255 \u65289 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  3: Google\u19977 \u22823 AI\u30340 \u27604 \u36611  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56522  Google \u19977 \u22823  AI \u24037 \u20855 \u27604 \u36611 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u20102 \u35299  NotebookLM, Gemini, \u21644  Google AI Studio \u30340 \u19981 \u21516 \u20043 \u34389 \u65306 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table-container"\strokec6  \strokec5 style\strokec7 =\strokec8 "max-height: 70vh; overflow-y: auto;"\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 table\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 thead\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u24037 \u20855 \u21517 \u31281 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u24375 \u38917  / \u20027 \u35201 \u21151 \u33021 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u20351 \u29992 \u26178 \u27231  / \u36969 \u21512 \u22580 \u26223 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 thead\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 tbody\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 NotebookLM\strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u22522 \u26044 \strokec7 <\strokec4 strong\strokec7 >\strokec6 \uc0\u24744 \u25552 \u20379 \u30340 \u36039 \u26009 \u20358 \u28304 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u36914 \u34892 \u30740 \u31350 \u33287 \u23531 \u20316 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u24555 \u36895 \u25688 \u35201 \u12289 \u25552 \u21839 \u12289 \u29983 \u25104 \u31558 \u35352 \u12289 FAQ\u12289 \u23416 \u32722 \u25351 \u21335 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u25972 \u21512 \u22810 \u31278 \u20358 \u28304  (PDF, Docs, URL, YouTube\u23383 \u24149 )\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u20491 \u20154 \u21270  AI \u30740 \u31350 \u21161 \u29702 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u28145 \u24230 \u38321 \u35712 \u33287 \u29702 \u35299 \u22823 \u37327 \u25991 \u20214 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u23416 \u34899 \u30740 \u31350 \u12289 \u22577 \u21578 \u25776 \u23531 \u12289 \u35506 \u31243 \u28310 \u20633 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u24314 \u31435 \u20491 \u20154 \u30693 \u35672 \u24235 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u20006 \u33287  AI \u20114 \u21205 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u38656 \u35201  AI \u22238 \u25033 \strokec7 <\strokec4 strong\strokec7 >\strokec6 \uc0\u22196 \u26684 \u22522 \u26044 \u29305 \u23450 \u25991 \u20214 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u26178 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 Gemini (App/Web)\strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36890 \u29992 \u22411  AI \u21161 \u29702 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u32178 \u38913 \u29256  gemini.google.com \u25110  App)\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u21109 \u24847 \u23531 \u20316 \u12289 \u31243 \u24335 \u30908 \u29983 \u25104 \u12289 \u22810 \u35486 \u35328 \u32763 \u35695 \u12289 \u26085 \u24120 \u21839 \u31572 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u21487 \u36899 \u25509  Google Apps (Gmail, Docs \u31561 \u65292 \u38656 \u20184 \u36027 \u29256 )\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u22810 \u27169 \u24907 \u33021 \u21147  (\u29702 \u35299 \u25991 \u23383 \u12289 \u22294 \u29255 \u12289 \u35486 \u38899 )\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u24555 \u36895 \u29554 \u21462 \u36039 \u35338 \u12289 \u33126 \u21147 \u28608 \u30442 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u25776 \u23531 \u33609 \u31295 \u12289 \u28516 \u39166 \u25991 \u23383 \u12289 \u23416 \u32722 \u26032 \u30693 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u26085 \u24120 \u20219 \u21209 \u30340  AI \u21332 \u21161 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u38656 \u35201 \u24291 \u27867 \u30693 \u35672 \u33287 \u21109 \u24847 \u29983 \u25104 \u26178 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                         \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 Google AI Studio\strokec7 </\strokec4 strong\strokec7 ><\strokec4 br\strokec7 ><\strokec4 small\strokec7 >\strokec6 (ai.google.dev)\strokec7 </\strokec4 small\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u38283 \u30332 \u32773 \u24179 \u21488 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u65292 \u29992 \u26044 \u21407 \u22411 \u35373 \u35336 \u33287 \u24314 \u27083  AI \u25033 \u29992 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u23384 \u21462 \u26368 \u26032 \u30340  Gemini API \u27169 \u22411 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u35519 \u25972 \u27169 \u22411 \u21443 \u25976 \u12289 \u28204 \u35430 \u25552 \u31034  (Prompt Engineering)\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u29554 \u21462  API \u37329 \u38000 \u20197 \u25972 \u21512 \u21040 \u33258 \u24049 \u30340 \u25033 \u29992 \u31243 \u24335 \u20013 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 ul\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u38283 \u30332 \u32773 \u25110 \u25216 \u34899 \u24859 \u22909 \u32773 \strokec7 <\strokec4 strong\strokec7 >\strokec6 \uc0\u25506 \u32034  AI \u27169 \u22411 \u33021 \u21147 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u28858 \u29305 \u23450 \u25033 \u29992 \u22580 \u26223 \u35373 \u35336 \u21644 \u28204 \u35430  AI \u25552 \u31034 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u24314 \u27083 \u23458 \u35069 \u21270 \u30340  AI \u21151 \u33021 \u25110 \u26381 \u21209 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 li\strokec7 >\strokec6 \
+                                    \strokec7 <\strokec4 li\strokec7 >\strokec6 \uc0\u38656 \u35201 \u26356 \u32048 \u32251 \u25511 \u21046 \u27169 \u22411 \u34892 \u28858 \u26178 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                                \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 tbody\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 table\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1rem; font-size: 0.9rem;"\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u37325 \u40670 \u25552 \u31034 \u65306 \strokec7 </\strokec4 strong\strokec7 ><\strokec4 code\strokec7 >\strokec6 NotebookLM\strokec7 </\strokec4 code\strokec7 >\strokec6  \uc0\u24375 \u35519 \u22522 \u26044 \u24744 \u30340 \u36039 \u26009 \u65307 \strokec7 <\strokec4 code\strokec7 >\strokec6 Gemini\strokec7 </\strokec4 code\strokec7 >\strokec6  \uc0\u26159 \u33836 \u29992 \u21161 \u29702 \u65307 \strokec7 <\strokec4 code\strokec7 >\strokec6 AI Studio\strokec7 </\strokec4 code\strokec7 >\strokec6  \uc0\u21063 \u28858 \u38283 \u30332 \u32773 \u25171 \u36896 \u25033 \u29992 \u12290 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  4: \u21069 \u35328  - \u33879 \u20316 \u20154 \u26684 \u27402  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-subtitle"\strokec7 >\strokec6 I. \uc0\u21069 \u35328 \u65306 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56540  \u33879 \u20316 \u20154 \u26684 \u27402 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u35531 \u27880 \u24847 \u65292 \u20351 \u29992 AI\u24037 \u20855 \u26178 \u65292 \u20173 \u38656 \u23562 \u37325 \u20182 \u20154 \u30340 \u33879 \u20316 \u27402 \u30410 \u12290 \u20197 \u19979 \u24433 \u29255 \u25552 \u20379 \u30456 \u38364 \u35498 \u26126 \u65306 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtu.be/Kb1IRCcnkhY"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem; font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u35264 \u30475 \u35498 \u26126 \u24433 \u29255  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-youtube"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 0.8rem; margin-top: 1rem;"\strokec7 >\strokec6 \uc0\u65288 \u40670 \u25802 \u19978 \u26041 \u25353 \u37397 \u35264 \u30475 \u24433 \u29255 \u65289 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  5: \u20351 \u29992 Google AI\u30340 \u38480 \u21046 \u21450 \u35215 \u31684  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u9878 \u65039  \u20351 \u29992 Google AI\u30340 \u38480 \u21046 \u21450 \u35215 \u31684 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u22312 \u20351 \u29992  Gemini API (NotebookLM \u24213 \u23652 \u25216 \u34899 \u20043 \u19968 ) \u26178 \u65292 \u35531 \u21209 \u24517 \u36981 \u23432 \u30456 \u38364 \u25919 \u31574 \u65306 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table-container"\strokec6  \strokec5 style\strokec7 =\strokec8 "max-height: 60vh; overflow-y: auto;"\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 table\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 thead\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u25919 \u31574 \u37325 \u40670 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u35498 \u26126 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 thead\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 tbody\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u31105 \u27490 \u29992 \u36884 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u19981 \u24471 \u29992 \u26044 \u29986 \u29983 \u20167 \u24680 \u35328 \u35542 \u12289 \u39479 \u25854 \u12289 \u24773 \u33394 \u38706 \u39592 \u20839 \u23481 \u12289 \u26292 \u21147 \u20839 \u23481 \u25110 \u20219 \u20309 \u38750 \u27861 \u27963 \u21205 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36039 \u26009 \u34389 \u29702 \u33287 \u38577 \u31169 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 Google \uc0\u26371 \u30435 \u25511  API \u20351 \u29992 \u24773 \u27841 \u20197 \u20597 \u28204 \u28651 \u29992 \u34892 \u28858 \u12290 \u25552 \u31034 \u12289 \u32972 \u26223 \u36039 \u35338 \u21644 \u36664 \u20986 \u20839 \u23481 \u21487 \u33021 \u26371 \u34987 \u20445 \u30041  \strokec7 <\strokec4 strong\strokec7 >\strokec6 55 \uc0\u22825 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u29992 \u26044 \u28651 \u29992 \u30435 \u25511 \u65292 \u20294 \strokec7 <\strokec4 strong\strokec7 >\strokec6 \uc0\u19981 \u26371 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u29992 \u26044 \u35347 \u32244 \u25110 \u24494 \u35519 \u36890 \u29992  AI \u27169 \u22411 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                         \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u20154 \u24037 \u23529 \u26597 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u33509 \u31995 \u32113 \u20597 \u28204 \u21040 \u21487 \u30097 \u27963 \u21205 \u25110 \u20839 \u23481 \u27161 \u35352 \u65292 \strokec7 <\strokec4 strong\strokec7 >\strokec6 Google \uc0\u25480 \u27402 \u20154 \u21729 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u21487 \u33021 \u26371 \u36914 \u34892 \u20154 \u24037 \u23529 \u26597 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u25919 \u31574 \u36981 \u24490 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u36949 \u21453 \u25919 \u31574 \u21487 \u33021 \u23566 \u33268 \u20351 \u29992 \u38480 \u21046 \u12289 \u26283 \u26178 \u20572 \u27402 \u65292 \u22196 \u37325 \u32773 \u29978 \u33267 \u24115 \u25142 \u38364 \u38281 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u24847 \u35211 \u22238 \u39243 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u22312  AI Studio \u20013 \u25552 \u20379 \u30340 \u20559 \u22909 \u25237 \u31080 \u31561 \u24847 \u35211 \u22238 \u39243 \u65292 \u23559 \u29992 \u26044 \u25913 \u21892  Google \u29986 \u21697 \u21644 \u26381 \u21209 \u12290 \u25552 \u20132 \u24847 \u35211 \u26178 \u65292 \u35531 \u21247 \u21253 \u21547 \u25935 \u24863 \u25110 \u20491 \u20154 \u36039 \u35338 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                         \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36012 \u20219 \u27512 \u23660 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u20351 \u29992 \u32773 \u38656 \u23565 \u20854 \u25033 \u29992 \u31243 \u24335 \u30340 \u34892 \u28858 \u36000 \u36012 \u65292 \u20006 \u30906 \u20445 \u20854 \u31526 \u21512 \u25152 \u26377 \u36969 \u29992 \u27861 \u24459 \u33287 \u35215 \u31684 \u12290 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 tbody\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 table\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://ai.google.dev/gemini-api/docs/usage-policies?hl=zh-tw"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1.5rem;"\strokec7 >\strokec6 \uc0\u26597 \u30475 \u23436 \u25972 \u25919 \u31574  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-alt"\strokec7 ></\strokec4 i\strokec7 ></\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  6: AI\u30340 Do vs Don't -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u9989  AI\u30340 Do vs \u55357 \u57003  Don't\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.8rem; margin-top: 2rem;"\strokec7 >\strokec6 \
+                \uc0\u20102 \u35299 AI\u33021 \u20570 \u20160 \u40636 \u65292 \u20197 \u21450 \u21738 \u20123 \u26178 \u20505 \u25105 \u20497 \u20173 \u38656 \u35641 \u24910 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 style\strokec7 =\strokec8 "display: flex; justify-content: space-around; margin-top: 2rem;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem;"\strokec7 >\strokec6 \uc0\u55357 \u56397 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem;"\strokec7 >\strokec6 \uc0\u55358 \u56596 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem;"\strokec7 >\strokec6 \uc0\u55357 \u56398 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  7: \u37325 \u35079 \u24615 \u36027 \u26178 \u36027 \u24037  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56481  \u37325 \u35079 \u24615 \u36027 \u26178 \u36027 \u24037 \u65306 \u20132 \u32102 AI\u30465 \u26178 \u30465 \u21147 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u20363 \u22914 \u65306 \u36039 \u26009 \u25972 \u29702 \u12289 \u21021 \u27493 \u25688 \u35201 \u12289 \u32763 \u35695 \u12289 \u26684 \u24335 \u36681 \u25563 \u31561 ...\
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-cogs fa-spin"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #3498db;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  8: \u31934 \u28310 \u21028 \u26039 \u30495 \u20605  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55358 \u56784  \u31934 \u28310 \u21028 \u26039 \u30495 \u20605 \u65306 \strokec7 <\strokec4 strong\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #FFD700; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);"\strokec7 >\strokec6 \uc0\u12300 \u20154 \u33126 \u12301 \strokec7 </\strokec4 strong\strokec7 >\strokec6 \uc0\u28961 \u27861 \u34987 \u21462 \u20195 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                AI \uc0\u21487 \u33021 \u29986 \u29983 \u12300 \u24187 \u35258 \u12301 \u25110 \u19981 \u28310 \u30906 \u36039 \u35338 \u65292 \u21209 \u24517 \u36914 \u34892 \u20107 \u23526 \u26597 \u26680 \u33287 \u25209 \u21028 \u24615 \u24605 \u32771 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-brain"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #e74c3c;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  9: NoteBookLM\u36215 \u25163 \u24335  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-subtitle"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 2rem;"\strokec7 >\strokec6 II. NoteBookLM\uc0\u36215 \u25163 \u24335  \u55357 \u56960 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google/"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.8rem; padding: 1rem 2rem; margin-top: 2rem;"\strokec7 >\strokec6 \
+                NoteBookLM \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem;"\strokec7 >\strokec6 \uc0\u40670 \u25802 \u19978 \u26041 \u25353 \u37397 \u65292 \u38283 \u22987 \u24744 \u30340  NotebookLM \u20043 \u26053 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  10: NoteBookLM\u20171 \u38754 \u19968 \u30446 \u30637 \u28982  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56826 \u65039  1. NoteBookLM\u20171 \u38754 \u19968 \u30446 \u30637 \u28982 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u25506 \u32034  NotebookLM \u30340 \u20351 \u29992 \u32773 \u20171 \u38754 \u65292 \u29087 \u24713 \u21508 \u38917 \u21151 \u33021 \u12290 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google.com/?_gl=1*1m5f6p6*_ga*Njc4OTAwNjk0LjE3MjEyODUzODY.*_ga_W0LDH41ZCB*MTcyMTI4NTM4Ni4xLjAuMTcyMTI4NTM4Ni42MC4wLjA.&pli=1&authuser=0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem;"\strokec7 >\strokec6 \
+                \uc0\u25506 \u32034  NoteBookLM \u20171 \u38754  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-search"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  11: NotebookLM\u20813 \u36027 \u29256  VS NotebookLM Plus\u20184 \u36027 \u29256 \u27604 \u36611  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u9878 \u65039  NotebookLM\u20813 \u36027 \u29256  VS Plus\u20184 \u36027 \u29256 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u20102 \u35299 \u19981 \u21516 \u29256 \u26412 \u30340 \u24046 \u30064 \u65292 \u36984 \u25799 \u26368 \u36969 \u21512 \u24744 \u30340 \u26041 \u26696 \u65306 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table-container"\strokec6  \strokec5 style\strokec7 =\strokec8 "max-height: 60vh; overflow-y: auto;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 table\strokec6  \strokec5 class\strokec7 =\strokec8 "styled-table"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 thead\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 \uc0\u21151 \u33021 /\u38480 \u21046 \strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 NotebookLM (\uc0\u20813 \u36027 \u29256 )\strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 th\strokec7 >\strokec6 NotebookLM Plus (\uc0\u20184 \u36027 \u29256 )\strokec7 </\strokec4 th\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 thead\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 tbody\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u31558 \u35352 \u26412 \u25976 \u37327 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u26368 \u22810  100 \u20491 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u33267 \u23569  5 \u20493 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u26368 \u22810  500 \u20491 )\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u27599 \u20491 \u31558 \u35352 \u26412 \u30340 \u20358 \u28304 \u25976 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u26368 \u22810  50 \u20491 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u33267 \u23569  5 \u20493 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u26368 \u22810  300 \u20491 )\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                         \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u27599 \u20491 \u20358 \u28304 \u23383 \u25976 \u19978 \u38480 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u32004  500,000 \u23383 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u32004  500,000 \u23383  (\u33287 \u20813 \u36027 \u29256 \u30456 \u21516 )\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u27599 \u26085 \u26597 \u35426 \u27425 \u25976 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u26368 \u22810  50 \u27425 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u33267 \u23569  5 \u20493 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u26368 \u22810  500 \u27425 )\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u27599 \u26085 \u35486 \u38899 \u25688 \u35201 \u29983 \u25104 \u27425 \u25976 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u26368 \u22810  3 \u27425 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u33267 \u23569  5 \u20493 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u26368 \u22810  20 \u27425 )\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36914 \u38542 \u21151 \u33021 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u22522 \u26412 \u21151 \u33021 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u32842 \u22825 \u23560 \u29992 \u31558 \u35352 \u26412 \u20849 \u20139 \u12289 \u36914 \u38542 \u32842 \u22825 \u35373 \u23450 \u12289 \u31558 \u35352 \u26412 \u20998 \u26512 \u12289 \u38989 \u22806 \u38577 \u31169 \u33287 \u23433 \u20840 \u24615 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                         \strokec7 <\strokec4 tr\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36969 \u29992 \u23565 \u35937 \strokec7 </\strokec4 strong\strokec7 ></\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 >\strokec6 \uc0\u20491 \u20154 \u20351 \u29992 \u32773 \u20837 \u38272 \strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 td\strokec7 ><\strokec4 strong\strokec7 >\strokec6 \uc0\u36914 \u38542 \u20351 \u29992 \u32773 \u12289 \u22296 \u38538 \u12289 \u20225 \u26989 \u12289 \u25945 \u32946 \u27231 \u27083 \strokec7 </\strokec4 strong\strokec7 >\strokec6  (\uc0\u36879 \u36942  Google One AI Premium, Google Workspace, Google Cloud)\strokec7 </\strokec4 td\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 tr\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 tbody\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 table\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google/plus"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u20102 \u35299 \u26356 \u22810  NotebookLM Plus \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-rocket"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  12: \u20184 \u36027 \u29256 \u65306 \u36023 \u19968 \u24471 \u19977  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55356 \u57217  \u20184 \u36027 \u29256 \u65306 \u36023 \u19968 \u24471 \u19977  (Google One AI Premium)\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 style\strokec7 =\strokec8 "display: flex; justify-content: space-around; align-items: center; margin-top: 2rem; flex-wrap: wrap; gap: 1rem;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center p-4 m-2 bg-opacity-25 bg-white rounded-lg shadow-xl"\strokec6  \strokec5 style\strokec7 =\strokec8 "min-width: 200px; flex-basis: 28%;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-lightbulb fa-3x mb-2 text-yellow-400"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-semibold"\strokec7 >\strokec6 NotebookLM Plus\strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-sm"\strokec7 >\strokec6 \uc0\u36914 \u38542 \u30740 \u31350 \u33287 \u23531 \u20316 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-bold mx-2 text-gray-300 self-center"\strokec7 >\strokec6 +\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center p-4 m-2 bg-opacity-25 bg-white rounded-lg shadow-xl"\strokec6  \strokec5 style\strokec7 =\strokec8 "min-width: 200px; flex-basis: 28%;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-brain fa-3x mb-2 text-purple-400"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-semibold"\strokec7 >\strokec6 Gemini Advanced\strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-sm"\strokec7 >\strokec6 \uc0\u26368 \u24375 \u22823 \u30340  AI \u27169 \u22411 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-bold mx-2 text-gray-300 self-center"\strokec7 >\strokec6 +\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center p-4 m-2 bg-opacity-25 bg-white rounded-lg shadow-xl"\strokec6  \strokec5 style\strokec7 =\strokec8 "min-width: 200px; flex-basis: 28%;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-hdd fa-3x mb-2 text-blue-400"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-semibold"\strokec7 >\strokec6 2TB Google One\strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-sm"\strokec7 >\strokec6 \uc0\u38642 \u31471 \u20786 \u23384 \u31354 \u38291 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem;"\strokec7 >\strokec6 (\uc0\u36890 \u24120 \u21253 \u21547 \u22312  Google One AI Premium \u26041 \u26696 \u20013 )\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  13: NotebookLM\u25163 \u25226 \u25163 \u23526 \u20316  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u57056 \u65039  NotebookLM\u25163 \u25226 \u25163 \u23526 \u20316 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u25509 \u19979 \u20358 \u65292 \u35731 \u25105 \u20497 \u19968 \u36215 \u21205 \u25163 \u25805 \u20316 \u65292 \u39636 \u39511  NotebookLM \u30340 \u24375 \u22823 \u21151 \u33021 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-laptop-code"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #2ecc71;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  14: \u24314 \u35696 \u20351 \u29992 \u20491 \u20154 \u24115 \u34399 \u30331 \u20837  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56593  \u24314 \u35696 \u20351 \u29992 \u20491 \u20154 \u24115 \u34399 \u30331 \u20837 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u26356 \u20855 \u20139 \u29992 \u26368 \u26032 \u20840 \u21151 \u33021 \u20027 \u23566 \u24615 \u65292 \u30906 \u20445 \u24744 \u30340 \u36039 \u26009 \u33287 \u35373 \u23450 \u21516 \u27493 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-user-check"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #f39c12;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  15: \u35531 \u21152 \u20837 Padlet -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56541  \u35531 \u21152 \u20837 Padlet\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u33287 \u25105 \u20497 \u20998 \u20139 \u24744 \u30340 \u24819 \u27861 \u21644 \u21839 \u38988 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://padlet.com/gloriawu98gw2/20250710notebooklm-gloria-at-bqzkg1fzbtvkyqlf"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u21152 \u20837  Padlet \u35342 \u35542 \u21312  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-comments"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  16: \u22810 \u27169 \u24907 \u36039 \u26009 \u20358 \u28304 \u27963 \u29992  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56538  \u22810 \u27169 \u24907 \u36039 \u26009 \u20358 \u28304 \u27963 \u29992 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                NotebookLM \uc0\u25903 \u25588 \u22810 \u31278 \u39006 \u22411 \u30340 \u36039 \u26009 \u20358 \u28304 \u65292 \u35731 \u24744 \u30340 \u30740 \u31350 \u26356 \u20840 \u38754 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "flex justify-around items-center mt-8 flex-wrap"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-file-alt fa-3x text-blue-300 m-2"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u25991 \u20214 "\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-link fa-3x text-green-300 m-2"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u32178 \u22336 "\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-youtube fa-3x text-red-400 m-2"\strokec6  \strokec5 title\strokec7 =\strokec8 "YouTube"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-file-pdf fa-3x text-orange-300 m-2"\strokec6  \strokec5 title\strokec7 =\strokec8 "PDF"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-file-audio fa-3x text-purple-300 m-2"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u38899 \u27284 "\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  17: \u20241 \u24687 \u19968 \u19979  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #82E0AA;"\strokec7 >\strokec6 \uc0\u9749  \u20241 \u24687 \u19968 \u19979  \u9749 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u20280 \u23637 \u19968 \u19979 \u65292 \u30475 \u30475 \u26377 \u36259 \u30340 \u35373 \u35336 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "canva-embed-container"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 iframe\strokec6  \strokec5 loading\strokec7 =\strokec8 "lazy"\strokec6  \strokec5 src\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?embed"\strokec6  \strokec5 allowfullscreen\strokec7 =\strokec8 "allowfullscreen"\strokec6  \strokec5 allow\strokec7 =\strokec8 "fullscreen"\strokec7 ></\strokec4 iframe\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+             \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?utm_content=DAGlesP3HlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc4898417c0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1rem; background-color: #17a2b8;"\strokec7 >\strokec6 \
+                \uc0\u28961 \u27861 \u39023 \u31034 \u65311 \u40670 \u27492 \u26597 \u30475  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  18: 1. \u32178 \u38913 url -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55356 \u57104  1. \u32178 \u38913  URL\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u30452 \u25509 \u36028 \u19978 \u32178 \u22336 \u65292 NotebookLM \u21363 \u21487 \u20998 \u26512 \u32178 \u38913 \u20839 \u23481 \u12290 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem;"\strokec7 >\strokec6 \
+                \uc0\u31684 \u20363  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-square-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  19: 2. PDF -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56516  2. PDF\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u19978 \u20659  PDF \u25991 \u20214 \u65292 \u36914 \u34892 \u28145 \u24230 \u20998 \u26512 \u33287 \u25688 \u35201 \u12290 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://web1.tcte.edu.tw/EXAM/114_4y/"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem;"\strokec7 >\strokec6 \
+                \uc0\u31684 \u20363 \u20358 \u28304  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-file-pdf"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  20: 3. Docs/Word -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56529  3. Docs/Word\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u25903 \u25588  Google Docs \u25110  Microsoft Word \u25991 \u20214 \u65292 \u36629 \u39686 \u21295 \u20837 \u24744 \u30340 \u31558 \u35352 \u33287 \u22577 \u21578 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-file-word"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #2980b9;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://docs.google.com/document/d/15LZ5M3rf6aa_HgYVndx23HP8GOs7L90IU5U7YC9PL08/template/preview"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem; background-color: #ffc107; color: #212529;"\strokec7 >\strokec6 \
+                \uc0\u20351 \u29992 \u31684 \u26412  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-clone"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  21: 4. YouTube -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56570  4. YouTube\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec7 >\strokec6 \uc0\u36028 \u19978  YouTube \u24433 \u29255 \u36899 \u32080 \u65292 \u29554 \u21462 \u23383 \u24149 \u12289 \u25688 \u35201 \u33287 \u37325 \u40670 \u12290 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtu.be/DkrMNUfNYqQ?si=B0B1QUL4hCydjRDW"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem; font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u35264 \u30475 YouTube\u31684 \u20363  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-youtube"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+             \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 0.8rem; margin-top: 1rem;"\strokec7 >\strokec6 \uc0\u65288 \u40670 \u25802 \u19978 \u26041 \u25353 \u37397 \u35264 \u30475 \u24433 \u29255 \u65289 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  22: 5. Mp3\u36880 \u23383 \u31295  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55356 \u57255  5. MP3 \u36880 \u23383 \u31295 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u38899 \u27284 \u36681 \u36880 \u23383 \u31295 \u65292 \u36895 \u25972 \u29702 \u26371 \u35696 \u35352 \u37636 \u25110 \u35370 \u35527 \u20839 \u23481 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-microphone-alt"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 1.5rem; color: #8e44ad;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top:1rem; font-size: 0.9rem;"\strokec7 >\strokec6 (\uc0\u36890 \u24120 \u38656 \u35201 \u20808 \u23559  MP3 \u36681 \u28858 \u25991 \u23383 \u27284 \u20877 \u21295 \u20837 \u65292 \u25110 \u21033 \u29992 \u25903 \u25588 \u35486 \u38899 \u36664 \u20837 \u30340 \u31558 \u35352 )\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google.com/notebook/535ee215-0887-4703-9344-c01302d422ef?_gl=1*1m5f6p6*_ga*Njc4OTAwNjk0LjE3MjEyODUzODY.*_ga_W0LDH41ZCB*MTcyMTI4NTM4Ni4xLjAuMTcyMTI4NTM4Ni42MC4wLjA.&pli=1&authuser=0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-green"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1.5rem;"\strokec7 >\strokec6 \
+                Demo \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-play-circle"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  23: \u20241 \u24687 \u19968 \u19979  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #FAD7A0;"\strokec7 >\strokec6 \uc0\u55358 \u56800  \u20241 \u24687 \u19968 \u19979  \u55358 \u56800 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u20877 \u27425 \u25918 \u39686 \u65292 \u28310 \u20633 \u19979 \u19968 \u38542 \u27573 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "canva-embed-container"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 iframe\strokec6  \strokec5 loading\strokec7 =\strokec8 "lazy"\strokec6  \strokec5 src\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?embed"\strokec6  \strokec5 allowfullscreen\strokec7 =\strokec8 "allowfullscreen"\strokec6  \strokec5 allow\strokec7 =\strokec8 "fullscreen"\strokec7 ></\strokec4 iframe\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?utm_content=DAGlesP3HlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc4898417c0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1rem; background-color: #6610f2;"\strokec7 >\strokec6 \
+                \uc0\u28961 \u27861 \u39023 \u31034 \u65311 \u40670 \u27492 \u26597 \u30475  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  24: NotebookLM\u36914 \u38542 \u25506 \u32034  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55358 \u56813  NotebookLM\u36914 \u38542 \u25506 \u32034 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u30332 \u25496 \u26356 \u22810  NotebookLM \u30340 \u38577 \u34255 \u25216 \u24039 \u33287 \u39640 \u38542 \u25033 \u29992 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-search-plus"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #1abc9c;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  25: \u36914 \u38542 \u25506 \u32034 \u20358 \u28304  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56538  \u36914 \u38542 \u25506 \u32034 \u20358 \u28304 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u19968 \u37749 \u21295 \u20837 \u22810 \u31558 \u24310 \u20280 \u36039 \u26009 \u65292 \u25844 \u23637 \u24744 \u30340 \u30693 \u35672 \u32178 \u32097 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-project-diagram"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #d35400;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  26: \u20171 \u38754 \u20854 \u20182 \u21151 \u33021 \u37749  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u9881 \u65039  \u20171 \u38754 \u20854 \u20182 \u21151 \u33021 \u37749 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u35352 \u20107 \u36681 \u28858 \u36039 \u26009 \u20358 \u28304 \u65292 \u35731 \u24744 \u30340 \u31558 \u35352 \u20063 \u25104 \u28858  AI \u20998 \u26512 \u30340 \u19968 \u37096 \u20998 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-exchange-alt"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #7f8c8d;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  27: \u35486 \u38899 \u25688 \u35201  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55356 \u57241 \u65039  \u35486 \u38899 \u25688 \u35201 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem; margin-bottom: 0.5rem;"\strokec7 >\strokec6 \
+                \uc0\u35486 \u35328 \u35373 \u23450 \u65306 \u36984 \u25799 \u24744 \u20559 \u22909 \u30340 \u35486 \u38899 \u25688 \u35201 \u35486 \u35328 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u33258 \u35330  Podcast \u35527 \u35542 \u26041 \u21521 \u65306 \u24341 \u23566  AI \u29983 \u25104 \u31526 \u21512 \u24744 \u38656 \u27714 \u30340 \u35486 \u38899 \u20839 \u23481 \u12290 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-podcast"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2rem; color: #c0392b;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  28: \u20241 \u24687 \u19968 \u19979  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #A569BD;"\strokec7 >\strokec6 \uc0\u55358 \u56792 \u8205 \u9792 \u65039  \u20241 \u24687 \u19968 \u19979  \u55358 \u56792 \u8205 \u9794 \u65039 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u26368 \u24460 \u34909 \u21050 \u21069 \u30340 \u23527 \u38748 \u29255 \u21051 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "canva-embed-container"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 iframe\strokec6  \strokec5 loading\strokec7 =\strokec8 "lazy"\strokec6  \strokec5 src\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?embed"\strokec6  \strokec5 allowfullscreen\strokec7 =\strokec8 "allowfullscreen"\strokec6  \strokec5 allow\strokec7 =\strokec8 "fullscreen"\strokec7 ></\strokec4 iframe\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+             \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://www.canva.com/design/DAGlesP3HlI/C-gqTK9jC-Rd-PF6enIbGg/view?utm_content=DAGlesP3HlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc4898417c0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1rem; background-color: #fd7e14;"\strokec7 >\strokec6 \
+                \uc0\u28961 \u27861 \u39023 \u31034 \u65311 \u40670 \u27492 \u26597 \u30475  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-external-link-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  29: \u24515 \u26234 \u22294 \u36914 \u38542 \u25506 \u31350  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 3.2rem;"\strokec7 >\strokec6 \uc0\u55358 \u56800  \u24515 \u26234 \u22294 \u36914 \u38542 \u25506 \u31350  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-lightbulb"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #f1c40f;"\strokec7 ></\strokec4 i\strokec7 ></\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u23559 \u35079 \u38620 \u36039 \u35338 \u35222 \u35258 \u21270 \u65292 \u28608 \u30332 \u26356 \u22810 \u24605 \u32771 \u36899 \u32080 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google.com/notebook/5c2e64e1-376e-4426-8983-c1f54cff154d"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-purple"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem; padding: 0.8rem 1.8rem; margin-top: 2rem;"\strokec7 >\strokec6 \
+                \uc0\u24515 \u26234 \u22294  Demo \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-sitemap"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  30: \u22810 \u27169 \u24907 \u25033 \u29992  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 3.2rem;"\strokec7 >\strokec6 \uc0\u55356 \u57256  \u22810 \u27169 \u24907 \u25033 \u29992  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-photo-video"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #3498db;"\strokec7 ></\strokec4 i\strokec7 ></\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u32080 \u21512 \u25991 \u23383 \u12289 \u22294 \u20687 \u12289 \u24433 \u38899 \u65292 \u21109 \u36896 \u26356 \u35920 \u23500 \u30340 \u23416 \u32722 \u39636 \u39511 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://storyteller.mootion.com/referral?code=ASvHbKzJuCv"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-orange"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem;"\strokec7 >\strokec6 \
+                    Mootion \uc0\u25925 \u20107 \u25944 \u36848  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-film"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://notebooklm.google.com/notebook/c5acaefd-dd66-4083-a110-d5e91ce5f4e8?_gl=1*1m5f6p6*_ga*Njc4OTAwNjk0LjE3MjEyODUzODY.*_ga_W0LDH41ZCB*MTcyMTI4NTM4Ni4xLjAuMTcyMTI4NTM4Ni42MC4wLjA.&pli=1&authuser=0"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-red"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.2rem;"\strokec7 >\strokec6 \
+                    \uc0\u35413 \u37327 \u21629 \u38988  Demo \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-question-circle"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+    \
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  31: Gloria\u32769 \u24107 \u30340 \u36039 \u28304 \u20998 \u20139  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title mochiy-pop-font"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 3rem; color: #FFB6C1;"\strokec7 >\strokec6 \uc0\u55357 \u56470  Gloria\u32769 \u24107 \u30340 \u36039 \u28304 \u20998 \u20139  \u55357 \u56470 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtube.com/playlist?list=PLyRkKil2c7hI8YfZ-8f6FxCnJL8PiZKKn&si=vxhug6P_9f-KwvFR\'92"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #FF6347; min-width: 280px;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-youtube"\strokec7 ></\strokec4 i\strokec7 >\strokec6  Gloria\uc0\u32769 \u24107 \u30340 \u21488 \u35486 \u36629 \u21487 \u23416 \
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtube.com/playlist?list=PLH7wPryxIEEye3s5_PuaoZ0iNefTqQi52&si=zVeinE6NcjAs5mfX\'92"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #4682B4; min-width: 280px;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-google-drive"\strokec7 ></\strokec4 i\strokec7 >\strokec6  Gloria\uc0\u32769 \u24107 \u30340 \u20998 \u20139 GM\
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtube.com/playlist?list=PLPq8qJBv2ernUiTIQyLmbcGYKrMF3djVa&si=c0322qjQ56zKwhw5\'92"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #3CB371; min-width: 280px;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-share-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6  Gloria\uc0\u20998 \u20139 \
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://youtube.com/playlist?list=PLH7wPryxIEExmpuM-FwSQ9MeHahH8Dk6x&si=IghVme_tqga1xR7y\'92"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #DB7093; min-width: 280px;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-music"\strokec7 ></\strokec4 i\strokec7 >\strokec6  Gloria's Suno\
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://www.facebook.com/groups/2294169410829101"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #1877F2; min-width: 280px;"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fab fa-facebook"\strokec7 ></\strokec4 i\strokec7 >\strokec6  GEG Taiwan | \uc0\u21623 \u39165 \u27794 \
+                \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+             \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 0.8rem; margin-top: 1rem;"\strokec7 >\strokec6 \uc0\u65288 YouTube \u36899 \u32080 \u20677 \u20379 \u21443 \u32771 \u65292 \u35531 \u26367 \u25563 \u28858 \u23526 \u38555 \u24433 \u29255  ID\u65289 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  32: \u32080 \u35486  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title mochiy-pop-font"\strokec7 >\strokec6 \uc0\u55356 \u57225  \u32080 \u35486 \u65306 Let's Reflect!\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "conclusion-highlight mochiy-pop-font"\strokec7 >\strokec6 \
+                \uc0\u31070 \u21161 \u29702 \u26159 AI\u24037 \u20855 \u65292 \strokec7 <\strokec4 br\strokec7 >\strokec6 \uc0\u12300 \u20154 \u12301 \u25165 \u26159 \u30495 \u27491 \u20027 \u23472 \u32773 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-user-astronaut"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 4rem; margin-top: 2.5rem; color: #FFD700;"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+    \
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  33: \u22238 \u39243 \u34920 \u21934  -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title"\strokec7 >\strokec6 \uc0\u55357 \u56541  \u22238 \u39243 \u34920 \u21934 \strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem;"\strokec7 >\strokec6 \
+                \uc0\u35531 \u25475 \u25551  QR Code \u25110 \u40670 \u25802 \u36899 \u32080 \u22635 \u23531 \u22238 \u39243 \u65292 \u24744 \u30340 \u24847 \u35211 \u23565 \u25105 \u20497 \u38750 \u24120 \u37325 \u35201 \u65281 \
+            \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 img\strokec6  \strokec5 src\strokec7 =\strokec8 "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://docs.google.com/forms/d/e/1FAIpQLSeiLMef4CWks9KUE5PaHuOmyOi3RLp39j1auP_z-NA5YyyAQQ/viewform"\strokec6  \strokec5 alt\strokec7 =\strokec8 "\uc0\u22238 \u39243 \u34920 \u21934  QR Code"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin: 1.5rem auto; border-radius: 0.5rem; display: block; background-color: white; padding: 10px;"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://docs.google.com/forms/d/e/1FAIpQLSeiLMef4CWks9KUE5PaHuOmyOi3RLp39j1auP_z-NA5YyyAQQ/viewform"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: #28a745; border-color: #28a745;"\strokec7 >\strokec6 \
+                \uc0\u22635 \u23531 \u22238 \u39243 \u34920 \u21934  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-edit"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  34: \u20491 \u20154 \u23560 \u23660 \u30740 \u32722 \u35657 \u26360  (\u20462 \u25913 \u24460 ) -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 style\strokec7 =\strokec8 "display: none;"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-title prominent-title"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 3rem;"\strokec7 >\strokec6 \uc0\u55357 \u56540  \u20491 \u20154 \u23560 \u23660 \u30740 \u32722 \u35657 \u26360  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-award"\strokec6  \strokec5 style\strokec7 =\strokec8 "color: #FFD700;"\strokec7 ></\strokec4 i\strokec7 ></\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.3rem;"\strokec7 >\strokec6 \uc0\u24863 \u35613 \u24744 \u30340 \u21443 \u33287 \u65292 \u40670 \u25802 \u19979 \u26041 \u25353 \u37397 \u35069 \u20316 \u24744 \u30340 \u20491 \u20154 \u30740 \u32722 \u35657 \u26360 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "https://drive.google.com/file/d/1kOscKbLIAe4k2yEUHuaxMoFLpe59Ex_L/view?usp=drive_link"\strokec6  \strokec5 target\strokec7 =\strokec8 "_blank"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card info-card-green"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2rem; font-size: 1.3rem;"\strokec7 >\strokec6 \
+                \uc0\u22635 \u23531 \u22238 \u39243 \u34920 \u31435 \u21363 \u25910 \u21040 \u30740 \u32722 \u35657 \u26360  \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-pencil-alt"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+    \strokec12 <!-- \uc0\u25237 \u24433 \u29255  35: Thank You (\u21407 \u31532 34\u38913 ) -->\strokec6 \
+    \strokec7 <\strokec4 section\strokec6  \strokec5 class\strokec7 =\strokec8 "presentation-slide"\strokec6  \strokec5 id\strokec7 =\strokec8 "thank-you-slide"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-content animate-on-scroll"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 canvas\strokec6  \strokec5 id\strokec7 =\strokec8 "confetti-canvas"\strokec7 ></\strokec4 canvas\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "thank-you-text mochiy-pop-font"\strokec7 >\strokec6 THANK YOU!\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "slide-text"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-size: 1.5rem; color: #f0f0f0;"\strokec7 >\strokec6 \uc0\u24863 \u35613 \u24744 \u30340 \u21443 \u33287 \u65281 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "thank-you-emoji-container"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "thank-you-emoji"\strokec7 >\strokec6 \uc0\u55357 \u56911 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "beating-heart-hand"\strokec7 >\strokec6 \uc0\u55358 \u57078 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "thank-you-emoji"\strokec7 >\strokec6 \uc0\u55356 \u57119 \strokec7 </\strokec4 span\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 button\strokec6  \strokec5 onclick\strokec7 =\strokec8 "window.print()"\strokec6  \strokec5 class\strokec7 =\strokec8 "info-card"\strokec6  \strokec5 style\strokec7 =\strokec8 "margin-top: 2.5rem; background-color: #6c757d;"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-print"\strokec7 ></\strokec4 i\strokec7 >\strokec6  \uc0\u21015 \u21360 \u31777 \u22577 \
+            \strokec7 </\strokec4 button\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+\
+    \strokec7 <\strokec4 div\strokec6  \strokec5 id\strokec7 =\strokec8 "navigation-controls"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 button\strokec6  \strokec5 id\strokec7 =\strokec8 "prev-slide"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u19978 \u19968 \u24373  (\u24038 \u31661 \u38957 )"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-arrow-left"\strokec7 ></\strokec4 i\strokec7 >\strokec6  Previous\
+        \strokec7 </\strokec4 button\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 button\strokec6  \strokec5 id\strokec7 =\strokec8 "next-slide"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u19979 \u19968 \u24373  (\u21491 \u31661 \u38957 ) / \u36820 \u22238 \u27161 \u38988 \u38913 "\strokec7 >\strokec6 \
+            Next \strokec7 <\strokec4 i\strokec6  \strokec5 class\strokec7 =\strokec8 "fas fa-arrow-right"\strokec7 ></\strokec4 i\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 button\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+\
+    \strokec7 <\strokec4 div\strokec6  \strokec5 id\strokec7 =\strokec8 "slide-selector-container"\strokec7 >\strokec6 \
+        \strokec7 <\strokec4 select\strokec6  \strokec5 id\strokec7 =\strokec8 "slide-select-dropdown"\strokec6  \strokec5 title\strokec7 =\strokec8 "\uc0\u24555 \u36895 \u36339 \u36681 \u21040 \u25351 \u23450 \u38913 \u38754 "\strokec7 ></\strokec4 select\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+\
+    \strokec7 <\strokec4 script\strokec7 >\strokec6 \
+        document\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'DOMContentLoaded'\strokec9 ,\strokec6  \strokec9 ()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+            \strokec13 const\strokec6  slides \strokec9 =\strokec6  document\strokec9 .\strokec6 querySelectorAll\strokec9 (\strokec11 '.presentation-slide'\strokec9 );\strokec6 \
+            \strokec13 const\strokec6  prevButton \strokec9 =\strokec6  document\strokec9 .\strokec6 getElementById\strokec9 (\strokec11 'prev-slide'\strokec9 );\strokec6 \
+            \strokec13 const\strokec6  nextButton \strokec9 =\strokec6  document\strokec9 .\strokec6 getElementById\strokec9 (\strokec11 'next-slide'\strokec9 );\strokec6 \
+            \strokec13 const\strokec6  slideSelectDropdown \strokec9 =\strokec6  document\strokec9 .\strokec6 getElementById\strokec9 (\strokec11 'slide-select-dropdown'\strokec9 );\strokec6  \
+            \strokec13 let\strokec6  currentSlideIndex \strokec9 =\strokec6  \strokec14 0\strokec9 ;\strokec6 \
+            \
+            \strokec13 const\strokec6  framerAnimator \strokec9 =\strokec6  window\strokec9 .\strokec6 motion\strokec9 ;\strokec6  \
+\
+            \strokec13 const\strokec6  confettiCanvas \strokec9 =\strokec6  document\strokec9 .\strokec6 getElementById\strokec9 (\strokec11 'confetti-canvas'\strokec9 );\strokec6 \
+            \strokec13 let\strokec6  confettiCtx \strokec9 =\strokec6  confettiCanvas \strokec9 ?\strokec6  confettiCanvas\strokec9 .\strokec6 getContext\strokec9 (\strokec11 '2d'\strokec9 )\strokec6  \strokec9 :\strokec6  \strokec13 null\strokec9 ;\strokec6 \
+            \strokec13 let\strokec6  confettiParticles \strokec9 =\strokec6  \strokec9 [];\strokec6 \
+            \strokec13 let\strokec6  confettiAnimationId \strokec9 =\strokec6  \strokec13 null\strokec9 ;\strokec6 \
+\
+            \strokec13 const\strokec6  confettiColors \strokec9 =\strokec6  \strokec9 [\strokec11 "#f94144"\strokec9 ,\strokec6  \strokec11 "#f3722c"\strokec9 ,\strokec6  \strokec11 "#f8961e"\strokec9 ,\strokec6  \strokec11 "#f9c74f"\strokec9 ,\strokec6  \strokec11 "#90be6d"\strokec9 ,\strokec6  \strokec11 "#43aa8b"\strokec9 ,\strokec6  \strokec11 "#577590"\strokec9 ,\strokec6  \strokec11 "#277da1"\strokec9 ];\strokec6 \
+\
+            \strokec13 function\strokec6  \strokec15 Particle\strokec9 (\strokec6 x\strokec9 ,\strokec6  y\strokec9 ,\strokec6  size\strokec9 ,\strokec6  color\strokec9 ,\strokec6  velocity\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 x \strokec9 =\strokec6  x\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 y \strokec9 =\strokec6  y\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 size \strokec9 =\strokec6  size\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 color \strokec9 =\strokec6  color\strokec9 ;\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 velocity \strokec9 =\strokec6  velocity\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 opacity \strokec9 =\strokec6  \strokec14 1\strokec9 ;\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 rotation \strokec9 =\strokec6  \strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 *\strokec6  \strokec14 360\strokec9 ;\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 angularVelocity \strokec9 =\strokec6  \strokec9 (\strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 -\strokec6  \strokec14 0.5\strokec9 )\strokec6  \strokec9 *\strokec6  \strokec14 0.1\strokec9 ;\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec15 Particle\strokec9 .\strokec6 prototype\strokec9 .\strokec6 draw \strokec9 =\strokec6  \strokec13 function\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 confettiCtx\strokec9 )\strokec6  \strokec13 return\strokec9 ;\strokec6 \
+                confettiCtx\strokec9 .\strokec6 save\strokec9 ();\strokec6 \
+                confettiCtx\strokec9 .\strokec6 translate\strokec9 (\strokec13 this\strokec9 .\strokec6 x \strokec9 +\strokec6  \strokec13 this\strokec9 .\strokec6 size \strokec9 /\strokec6  \strokec14 2\strokec9 ,\strokec6  \strokec13 this\strokec9 .\strokec6 y \strokec9 +\strokec6  \strokec13 this\strokec9 .\strokec6 size \strokec9 /\strokec6  \strokec14 2\strokec9 );\strokec6 \
+                confettiCtx\strokec9 .\strokec6 rotate\strokec9 (\strokec13 this\strokec9 .\strokec6 rotation\strokec9 );\strokec6 \
+                confettiCtx\strokec9 .\strokec6 globalAlpha \strokec9 =\strokec6  \strokec13 this\strokec9 .\strokec6 opacity\strokec9 ;\strokec6 \
+                confettiCtx\strokec9 .\strokec6 fillStyle \strokec9 =\strokec6  \strokec13 this\strokec9 .\strokec6 color\strokec9 ;\strokec6 \
+                confettiCtx\strokec9 .\strokec6 fillRect\strokec9 (-\strokec13 this\strokec9 .\strokec6 size \strokec9 /\strokec6  \strokec14 2\strokec9 ,\strokec6  \strokec9 -\strokec13 this\strokec9 .\strokec6 size \strokec9 /\strokec6  \strokec14 2\strokec9 ,\strokec6  \strokec13 this\strokec9 .\strokec6 size\strokec9 ,\strokec6  \strokec13 this\strokec9 .\strokec6 size \strokec9 *\strokec6  \strokec14 1.5\strokec9 );\strokec6 \
+                confettiCtx\strokec9 .\strokec6 restore\strokec9 ();\strokec6 \
+            \strokec9 \};\strokec6 \
+\
+            \strokec15 Particle\strokec9 .\strokec6 prototype\strokec9 .\strokec6 update \strokec9 =\strokec6  \strokec13 function\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 x \strokec9 +=\strokec6  \strokec13 this\strokec9 .\strokec6 velocity\strokec9 .\strokec6 x\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 y \strokec9 +=\strokec6  \strokec13 this\strokec9 .\strokec6 velocity\strokec9 .\strokec6 y\strokec9 ;\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 velocity\strokec9 .\strokec6 y \strokec9 +=\strokec6  \strokec14 0.05\strokec9 ;\strokec6  \strokec13 this\strokec9 .\strokec6 opacity \strokec9 -=\strokec6  \strokec14 0.008\strokec9 ;\strokec6 \
+                \strokec13 this\strokec9 .\strokec6 rotation \strokec9 +=\strokec6  \strokec13 this\strokec9 .\strokec6 angularVelocity\strokec9 ;\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec13 this\strokec9 .\strokec6 opacity \strokec9 <\strokec6  \strokec14 0\strokec9 )\strokec6  \strokec13 this\strokec9 .\strokec6 opacity \strokec9 =\strokec6  \strokec14 0\strokec9 ;\strokec6 \
+            \strokec9 \};\strokec6 \
+\
+            \strokec13 function\strokec6  createConfetti\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 confettiCanvas \strokec9 ||\strokec6  \strokec9 !\strokec6 confettiCtx\strokec9 )\strokec6  \strokec13 return\strokec9 ;\strokec6 \
+                \strokec13 const\strokec6  particleCount \strokec9 =\strokec6  \strokec14 150\strokec9 ;\strokec6  \
+                \strokec13 const\strokec6  centerX \strokec9 =\strokec6  confettiCanvas\strokec9 .\strokec6 width \strokec9 /\strokec6  \strokec14 2\strokec9 ;\strokec6 \
+                \strokec13 for\strokec6  \strokec9 (\strokec13 let\strokec6  i \strokec9 =\strokec6  \strokec14 0\strokec9 ;\strokec6  i \strokec9 <\strokec6  particleCount\strokec9 ;\strokec6  i\strokec9 ++)\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 const\strokec6  size \strokec9 =\strokec6  \strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 *\strokec6  \strokec14 8\strokec6  \strokec9 +\strokec6  \strokec14 4\strokec9 ;\strokec6 \
+                    \strokec13 const\strokec6  color \strokec9 =\strokec6  confettiColors\strokec9 [\strokec15 Math\strokec9 .\strokec6 floor\strokec9 (\strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 *\strokec6  confettiColors\strokec9 .\strokec6 length\strokec9 )];\strokec6 \
+                    \strokec13 const\strokec6  velocity \strokec9 =\strokec6  \strokec9 \{\strokec6  x\strokec9 :\strokec6  \strokec9 (\strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 -\strokec6  \strokec14 0.5\strokec9 )\strokec6  \strokec9 *\strokec6  \strokec14 8\strokec9 ,\strokec6  y\strokec9 :\strokec6  \strokec9 -(\strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 *\strokec6  \strokec14 6\strokec6  \strokec9 +\strokec6  \strokec14 4\strokec9 )\strokec6  \strokec9 \};\strokec6 \
+                    \strokec13 const\strokec6  x \strokec9 =\strokec6  centerX \strokec9 +\strokec6  \strokec9 (\strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 -\strokec6  \strokec14 0.5\strokec9 )\strokec6  \strokec9 *\strokec6  \strokec9 (\strokec6 confettiCanvas\strokec9 .\strokec6 width \strokec9 *\strokec6  \strokec14 0.6\strokec9 );\strokec6 \
+                    \strokec13 const\strokec6  y \strokec9 =\strokec6  \strokec15 Math\strokec9 .\strokec6 random\strokec9 ()\strokec6  \strokec9 *\strokec6  \strokec14 50\strokec6  \strokec9 -\strokec6  \strokec14 20\strokec9 ;\strokec6 \
+                    confettiParticles\strokec9 .\strokec6 push\strokec9 (\strokec13 new\strokec6  \strokec15 Particle\strokec9 (\strokec6 x\strokec9 ,\strokec6  y\strokec9 ,\strokec6  size\strokec9 ,\strokec6  color\strokec9 ,\strokec6  velocity\strokec9 ));\strokec6 \
+                \strokec9 \}\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  animateConfetti\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 confettiCanvas \strokec9 ||\strokec6  \strokec9 !\strokec6 confettiCtx\strokec9 )\strokec6  \strokec13 return\strokec9 ;\strokec6 \
+                confettiCtx\strokec9 .\strokec6 clearRect\strokec9 (\strokec14 0\strokec9 ,\strokec6  \strokec14 0\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 width\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 height\strokec9 );\strokec6 \
+                confettiParticles\strokec9 .\strokec6 forEach\strokec9 ((\strokec6 particle\strokec9 ,\strokec6  index\strokec9 )\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                    particle\strokec9 .\strokec6 update\strokec9 ();\strokec6  particle\strokec9 .\strokec6 draw\strokec9 ();\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 particle\strokec9 .\strokec6 opacity \strokec9 <=\strokec6  \strokec14 0\strokec6  \strokec9 ||\strokec6  particle\strokec9 .\strokec6 y \strokec9 >\strokec6  confettiCanvas\strokec9 .\strokec6 height\strokec9 )\strokec6  confettiParticles\strokec9 .\strokec6 splice\strokec9 (\strokec6 index\strokec9 ,\strokec6  \strokec14 1\strokec9 );\strokec6 \
+                \strokec9 \});\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 confettiParticles\strokec9 .\strokec6 length \strokec9 >\strokec6  \strokec14 0\strokec9 )\strokec6  confettiAnimationId \strokec9 =\strokec6  requestAnimationFrame\strokec9 (\strokec6 animateConfetti\strokec9 );\strokec6 \
+                \strokec13 else\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 confettiCtx\strokec9 )\strokec6  confettiCtx\strokec9 .\strokec6 clearRect\strokec9 (\strokec14 0\strokec9 ,\strokec6  \strokec14 0\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 width\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 height\strokec9 );\strokec6 \
+                    cancelAnimationFrame\strokec9 (\strokec6 confettiAnimationId\strokec9 );\strokec6  confettiAnimationId \strokec9 =\strokec6  \strokec13 null\strokec9 ;\strokec6 \
+                \strokec9 \}\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  startConfetti\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 confettiCanvas \strokec9 ||\strokec6  \strokec9 !\strokec6 confettiCtx\strokec9 )\strokec6  \strokec13 return\strokec9 ;\strokec6 \
+                \strokec13 const\strokec6  slideContent \strokec9 =\strokec6  confettiCanvas\strokec9 .\strokec6 parentElement\strokec9 ;\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 slideContent\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    confettiCanvas\strokec9 .\strokec6 width \strokec9 =\strokec6  slideContent\strokec9 .\strokec6 offsetWidth\strokec9 ;\strokec6 \
+                    confettiCanvas\strokec9 .\strokec6 height \strokec9 =\strokec6  slideContent\strokec9 .\strokec6 offsetHeight\strokec9 ;\strokec6 \
+                \strokec9 \}\strokec6 \
+                confettiParticles \strokec9 =\strokec6  \strokec9 [];\strokec6  createConfetti\strokec9 ();\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 confettiAnimationId\strokec9 )\strokec6  animateConfetti\strokec9 ();\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  stopConfetti\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 confettiAnimationId\strokec9 )\strokec6  \strokec9 \{\strokec6  cancelAnimationFrame\strokec9 (\strokec6 confettiAnimationId\strokec9 );\strokec6  confettiAnimationId \strokec9 =\strokec6  \strokec13 null\strokec9 ;\strokec6  \strokec9 \}\strokec6 \
+                confettiParticles \strokec9 =\strokec6  \strokec9 [];\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 confettiCtx \strokec9 &&\strokec6  confettiCanvas\strokec9 )\strokec6  confettiCtx\strokec9 .\strokec6 clearRect\strokec9 (\strokec14 0\strokec9 ,\strokec6  \strokec14 0\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 width\strokec9 ,\strokec6  confettiCanvas\strokec9 .\strokec6 height\strokec9 );\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  animateElementsInSlide\strokec9 (\strokec6 slide\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 const\strokec6  elementsToAnimate \strokec9 =\strokec6  slide\strokec9 .\strokec6 querySelectorAll\strokec9 (\strokec11 '.animate-on-scroll'\strokec9 );\strokec6 \
+                elementsToAnimate\strokec9 .\strokec6 forEach\strokec9 (\strokec6 element \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 const\strokec6  delay \strokec9 =\strokec6  parseFloat\strokec9 (\strokec6 element\strokec9 .\strokec6 getAttribute\strokec9 (\strokec11 'data-delay'\strokec9 ))\strokec6  \strokec9 ||\strokec6  \strokec14 0\strokec9 ;\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 framerAnimator \strokec9 &&\strokec6  \strokec13 typeof\strokec6  framerAnimator\strokec9 .\strokec13 set\strokec6  \strokec9 ===\strokec6  \strokec11 'function'\strokec9 )\strokec6  framerAnimator\strokec9 .\strokec13 set\strokec9 (\strokec6 element\strokec9 ,\strokec6  \strokec9 \{\strokec6  opacity\strokec9 :\strokec6  \strokec14 0\strokec9 ,\strokec6  y\strokec9 :\strokec6  \strokec14 50\strokec6  \strokec9 \});\strokec6 \
+                    \strokec13 else\strokec6  \strokec9 \{\strokec6  element\strokec9 .\strokec6 style\strokec9 .\strokec6 opacity \strokec9 =\strokec6  \strokec14 0\strokec9 ;\strokec6  element\strokec9 .\strokec6 style\strokec9 .\strokec6 transform \strokec9 =\strokec6  \strokec11 'translateY(50px)'\strokec9 ;\}\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 framerAnimator \strokec9 &&\strokec6  \strokec13 typeof\strokec6  framerAnimator\strokec9 .\strokec6 animate \strokec9 ===\strokec6  \strokec11 'function'\strokec9 )\strokec6  framerAnimator\strokec9 .\strokec6 animate\strokec9 (\strokec6 element\strokec9 ,\strokec6  \strokec9 \{\strokec6  opacity\strokec9 :\strokec6  \strokec14 1\strokec9 ,\strokec6  y\strokec9 :\strokec6  \strokec14 0\strokec6  \strokec9 \},\strokec6  \strokec9 \{\strokec6  duration\strokec9 :\strokec6  \strokec14 0.7\strokec9 ,\strokec6  ease\strokec9 :\strokec6  \strokec9 [\strokec14 0.25\strokec9 ,\strokec6  \strokec14 0.46\strokec9 ,\strokec6  \strokec14 0.45\strokec9 ,\strokec6  \strokec14 0.94\strokec9 ],\strokec6  delay\strokec9 :\strokec6  delay \strokec9 \});\strokec6 \
+                    \strokec13 else\strokec6  \strokec9 \{\strokec6  setTimeout\strokec9 (()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6  element\strokec9 .\strokec6 style\strokec9 .\strokec6 transition \strokec9 =\strokec6  \strokec11 `opacity 0.7s ease-out \strokec9 $\{\strokec6 delay\strokec9 \}\strokec11 s, transform 0.7s ease-out \strokec9 $\{\strokec6 delay\strokec9 \}\strokec11 s`\strokec9 ;\strokec6  element\strokec9 .\strokec6 style\strokec9 .\strokec6 opacity \strokec9 =\strokec6  \strokec14 1\strokec9 ;\strokec6  element\strokec9 .\strokec6 style\strokec9 .\strokec6 transform \strokec9 =\strokec6  \strokec11 'translateY(0px)'\strokec9 ;\strokec6  \strokec9 \},\strokec6  \strokec14 50\strokec9 );\strokec6  \strokec9 \}\strokec6 \
+                \strokec9 \});\strokec6 \
+            \strokec9 \}\strokec6 \
+            \
+            \strokec13 function\strokec6  populateSlideSelector\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 slideSelectDropdown\strokec9 )\strokec6  \strokec13 return\strokec9 ;\strokec6 \
+                slideSelectDropdown\strokec9 .\strokec6 innerHTML \strokec9 =\strokec6  \strokec11 ''\strokec9 ;\strokec6  \
+                slides\strokec9 .\strokec6 forEach\strokec9 ((\strokec6 slide\strokec9 ,\strokec6  index\strokec9 )\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 const\strokec6  option \strokec9 =\strokec6  document\strokec9 .\strokec6 createElement\strokec9 (\strokec11 'option'\strokec9 );\strokec6 \
+                    option\strokec9 .\strokec6 value \strokec9 =\strokec6  index\strokec9 ;\strokec6 \
+                    \strokec13 let\strokec6  titleElement \strokec9 =\strokec6  slide\strokec9 .\strokec6 querySelector\strokec9 (\strokec11 '.slide-title'\strokec9 );\strokec6 \
+                    \strokec13 let\strokec6  slideTitleText \strokec9 =\strokec6  \strokec11 `\uc0\u31532  \strokec9 $\{\strokec6 index \strokec9 +\strokec6  \strokec14 1\strokec9 \}\strokec11  \uc0\u38913 `\strokec9 ;\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 titleElement\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                        \strokec13 let\strokec6  rawTitle \strokec9 =\strokec6  titleElement\strokec9 .\strokec6 textContent\strokec9 .\strokec6 trim\strokec9 ().\strokec6 replace\strokec9 (\strokec16 /\\s+/\strokec13 g\strokec9 ,\strokec6  \strokec11 ' '\strokec9 );\strokec6 \
+                        \strokec13 if\strokec6  \strokec9 (\strokec6 rawTitle\strokec9 .\strokec6 length \strokec9 >\strokec6  \strokec14 20\strokec9 )\strokec6  \strokec9 \{\strokec6  \
+                           rawTitle \strokec9 =\strokec6  rawTitle\strokec9 .\strokec6 substring\strokec9 (\strokec14 0\strokec9 ,\strokec6  \strokec14 18\strokec9 )\strokec6  \strokec9 +\strokec6  \strokec11 '...'\strokec9 ;\strokec6 \
+                        \strokec9 \}\strokec6 \
+                        \strokec13 if\strokec9 (\strokec6 rawTitle\strokec9 )\strokec6  slideTitleText \strokec9 +=\strokec6  \strokec11 `: \strokec9 $\{\strokec6 rawTitle\strokec9 \}\strokec11 `\strokec9 ;\strokec6 \
+                    \strokec9 \}\strokec6 \
+                    option\strokec9 .\strokec6 textContent \strokec9 =\strokec6  slideTitleText\strokec9 ;\strokec6 \
+                    slideSelectDropdown\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 option\strokec9 );\strokec6 \
+                \strokec9 \});\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  showSlide\strokec9 (\strokec6 index\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                slides\strokec9 .\strokec6 forEach\strokec9 ((\strokec6 slide\strokec9 ,\strokec6  i\strokec9 )\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                    slide\strokec9 .\strokec6 style\strokec9 .\strokec6 display \strokec9 =\strokec6  \strokec11 'none'\strokec9 ;\strokec6  \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 slide\strokec9 .\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec6  \strokec9 &&\strokec6  i \strokec9 !==\strokec6  index\strokec9 )\strokec6  stopConfetti\strokec9 ();\strokec6 \
+                \strokec9 \});\strokec6 \
+                \strokec13 const\strokec6  currentSlide \strokec9 =\strokec6  slides\strokec9 [\strokec6 index\strokec9 ];\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlide\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    currentSlide\strokec9 .\strokec6 style\strokec9 .\strokec6 display \strokec9 =\strokec6  \strokec11 'flex'\strokec9 ;\strokec6  \
+                    requestAnimationFrame\strokec9 (()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6  \
+                        animateElementsInSlide\strokec9 (\strokec6 currentSlide\strokec9 );\strokec6 \
+                        \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlide\strokec9 .\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec9 )\strokec6  setTimeout\strokec9 (\strokec6 startConfetti\strokec9 ,\strokec6  \strokec14 100\strokec9 );\strokec6  \
+                    \strokec9 \});\strokec6 \
+                \strokec9 \}\strokec6 \
+                currentSlideIndex \strokec9 =\strokec6  index\strokec9 ;\strokec6  \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 slideSelectDropdown\strokec9 )\strokec6  \strokec9 \{\strokec6  \
+                    slideSelectDropdown\strokec9 .\strokec6 value \strokec9 =\strokec6  currentSlideIndex\strokec9 ;\strokec6 \
+                \strokec9 \}\strokec6 \
+                updateNavigationButtons\strokec9 ();\strokec6  \
+            \strokec9 \}\strokec6 \
+\
+            \strokec13 function\strokec6  updateNavigationButtons\strokec9 ()\strokec6  \strokec9 \{\strokec6 \
+                prevButton\strokec9 .\strokec6 disabled \strokec9 =\strokec6  currentSlideIndex \strokec9 ===\strokec6  \strokec14 0\strokec9 ;\strokec6 \
+\
+                \strokec13 const\strokec6  nextButtonIcon \strokec9 =\strokec6  nextButton\strokec9 .\strokec6 querySelector\strokec9 (\strokec11 'i'\strokec9 );\strokec6 \
+                \strokec13 let\strokec6  nextButtonTextNode \strokec9 =\strokec6  \strokec15 Array\strokec9 .\strokec13 from\strokec9 (\strokec6 nextButton\strokec9 .\strokec6 childNodes\strokec9 ).\strokec6 find\strokec9 (\strokec6 node \strokec9 =>\strokec6  node\strokec9 .\strokec6 nodeType \strokec9 ===\strokec6  \strokec15 Node\strokec9 .\strokec15 TEXT_NODE\strokec6  \strokec9 &&\strokec6  node\strokec9 .\strokec6 nodeValue\strokec9 .\strokec6 trim\strokec9 ()\strokec6  \strokec9 !==\strokec6  \strokec11 ''\strokec9 );\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (!\strokec6 nextButtonTextNode\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 const\strokec6  newTextNode \strokec9 =\strokec6  document\strokec9 .\strokec6 createTextNode\strokec9 (\strokec11 ''\strokec9 );\strokec6  \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 nextButton\strokec9 .\strokec6 firstChild \strokec9 &&\strokec6  nextButton\strokec9 .\strokec6 firstChild\strokec9 .\strokec6 nodeType \strokec9 ===\strokec6  \strokec15 Node\strokec9 .\strokec15 ELEMENT_NODE\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                         nextButton\strokec9 .\strokec6 insertBefore\strokec9 (\strokec6 newTextNode\strokec9 ,\strokec6  nextButton\strokec9 .\strokec6 firstChild\strokec9 );\strokec6  \
+                    \strokec9 \}\strokec6  \strokec13 else\strokec6  \strokec9 \{\strokec6 \
+                        nextButton\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 newTextNode\strokec9 );\strokec6  \
+                    \strokec9 \}\strokec6 \
+                    nextButtonTextNode \strokec9 =\strokec6  newTextNode\strokec9 ;\strokec6 \
+                \strokec9 \}\strokec6 \
+\
+                \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlideIndex \strokec9 ===\strokec6  slides\strokec9 .\strokec6 length \strokec9 -\strokec6  \strokec14 1\strokec6  \strokec9 &&\strokec6  slides\strokec9 [\strokec6 currentSlideIndex\strokec9 ].\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    nextButtonTextNode\strokec9 .\strokec6 nodeValue \strokec9 =\strokec6  \strokec11 '\uc0\u36820 \u22238 \u27161 \u38988 \u38913  '\strokec9 ;\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 nextButtonIcon\strokec9 )\strokec6  nextButtonIcon\strokec9 .\strokec6 className \strokec9 =\strokec6  \strokec11 'fas fa-home'\strokec9 ;\strokec6 \
+                    \strokec13 else\strokec6  \strokec9 \{\strokec6  \
+                        \strokec13 const\strokec6  icon \strokec9 =\strokec6  document\strokec9 .\strokec6 createElement\strokec9 (\strokec11 'i'\strokec9 );\strokec6 \
+                        icon\strokec9 .\strokec6 className \strokec9 =\strokec6  \strokec11 'fas fa-home'\strokec9 ;\strokec6 \
+                        nextButton\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 icon\strokec9 );\strokec6 \
+                    \strokec9 \}\strokec6 \
+                    nextButton\strokec9 .\strokec6 disabled \strokec9 =\strokec6  \strokec13 false\strokec9 ;\strokec6 \
+                    nextButton\strokec9 .\strokec6 classList\strokec9 .\strokec6 add\strokec9 (\strokec11 'return-to-title'\strokec9 );\strokec6  \
+                    nextButton\strokec9 .\strokec6 classList\strokec9 .\strokec6 remove\strokec9 (\strokec11 'default-next'\strokec9 );\strokec6 \
+                \strokec9 \}\strokec6  \strokec13 else\strokec6  \strokec9 \{\strokec6 \
+                    nextButtonTextNode\strokec9 .\strokec6 nodeValue \strokec9 =\strokec6  \strokec11 'Next '\strokec9 ;\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 nextButtonIcon\strokec9 )\strokec6  nextButtonIcon\strokec9 .\strokec6 className \strokec9 =\strokec6  \strokec11 'fas fa-arrow-right'\strokec9 ;\strokec6 \
+                     \strokec13 else\strokec6  \strokec9 \{\strokec6 \
+                        \strokec13 const\strokec6  icon \strokec9 =\strokec6  document\strokec9 .\strokec6 createElement\strokec9 (\strokec11 'i'\strokec9 );\strokec6 \
+                        icon\strokec9 .\strokec6 className \strokec9 =\strokec6  \strokec11 'fas fa-arrow-right'\strokec9 ;\strokec6 \
+                        nextButton\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 icon\strokec9 );\strokec6 \
+                    \strokec9 \}\strokec6 \
+                    nextButton\strokec9 .\strokec6 disabled \strokec9 =\strokec6  currentSlideIndex \strokec9 ===\strokec6  slides\strokec9 .\strokec6 length \strokec9 -\strokec6  \strokec14 1\strokec9 ;\strokec6 \
+                    nextButton\strokec9 .\strokec6 classList\strokec9 .\strokec6 remove\strokec9 (\strokec11 'return-to-title'\strokec9 );\strokec6 \
+                    nextButton\strokec9 .\strokec6 classList\strokec9 .\strokec6 add\strokec9 (\strokec11 'default-next'\strokec9 );\strokec6  \
+                \strokec9 \}\strokec6 \
+            \strokec9 \}\strokec6 \
+            \
+            \strokec13 if\strokec6  \strokec9 (!\strokec15 Array\strokec9 .\strokec13 from\strokec9 (\strokec6 nextButton\strokec9 .\strokec6 childNodes\strokec9 ).\strokec6 find\strokec9 (\strokec6 node \strokec9 =>\strokec6  node\strokec9 .\strokec6 nodeType \strokec9 ===\strokec6  \strokec15 Node\strokec9 .\strokec15 TEXT_NODE\strokec6  \strokec9 &&\strokec6  node\strokec9 .\strokec6 nodeValue\strokec9 .\strokec6 trim\strokec9 ()\strokec6  \strokec9 !==\strokec6  \strokec11 ''\strokec9 ))\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 const\strokec6  initialTextNode \strokec9 =\strokec6  document\strokec9 .\strokec6 createTextNode\strokec9 (\strokec11 'Next '\strokec9 );\strokec6 \
+                 \strokec13 if\strokec6  \strokec9 (\strokec6 nextButton\strokec9 .\strokec6 firstChild \strokec9 &&\strokec6  nextButton\strokec9 .\strokec6 firstChild\strokec9 .\strokec6 nodeType \strokec9 ===\strokec6  \strokec15 Node\strokec9 .\strokec15 ELEMENT_NODE\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                     nextButton\strokec9 .\strokec6 insertBefore\strokec9 (\strokec6 initialTextNode\strokec9 ,\strokec6  nextButton\strokec9 .\strokec6 firstChild\strokec9 );\strokec6 \
+                 \strokec9 \}\strokec6  \strokec13 else\strokec6  \strokec9 \{\strokec6 \
+                    nextButton\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 initialTextNode\strokec9 );\strokec6 \
+                 \strokec9 \}\strokec6 \
+            \strokec9 \}\strokec6 \
+            \strokec13 if\strokec6  \strokec9 (!\strokec6 nextButton\strokec9 .\strokec6 querySelector\strokec9 (\strokec11 'i'\strokec9 ))\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 const\strokec6  icon \strokec9 =\strokec6  document\strokec9 .\strokec6 createElement\strokec9 (\strokec11 'i'\strokec9 );\strokec6 \
+                icon\strokec9 .\strokec6 className \strokec9 =\strokec6  \strokec11 'fas fa-arrow-right'\strokec9 ;\strokec6 \
+                nextButton\strokec9 .\strokec6 appendChild\strokec9 (\strokec6 icon\strokec9 );\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            prevButton\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'click'\strokec9 ,\strokec6  \strokec9 ()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6  \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlideIndex \strokec9 >\strokec6  \strokec14 0\strokec9 )\strokec6  showSlide\strokec9 (\strokec6 currentSlideIndex \strokec9 -\strokec6  \strokec14 1\strokec9 );\strokec6  \strokec9 \});\strokec6 \
+            \
+            nextButton\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'click'\strokec9 ,\strokec6  \strokec9 ()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlideIndex \strokec9 ===\strokec6  slides\strokec9 .\strokec6 length \strokec9 -\strokec6  \strokec14 1\strokec6  \strokec9 &&\strokec6  slides\strokec9 [\strokec6 currentSlideIndex\strokec9 ].\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    showSlide\strokec9 (\strokec14 0\strokec9 );\strokec6  \
+                \strokec9 \}\strokec6  \strokec13 else\strokec6  \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlideIndex \strokec9 <\strokec6  slides\strokec9 .\strokec6 length \strokec9 -\strokec6  \strokec14 1\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                    showSlide\strokec9 (\strokec6 currentSlideIndex \strokec9 +\strokec6  \strokec14 1\strokec9 );\strokec6 \
+                \strokec9 \}\strokec6 \
+            \strokec9 \});\strokec6 \
+\
+            \strokec13 if\strokec6  \strokec9 (\strokec6 slideSelectDropdown\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                slideSelectDropdown\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'change'\strokec9 ,\strokec6  \strokec9 (\strokec6 event\strokec9 )\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                    \strokec13 const\strokec6  selectedIndex \strokec9 =\strokec6  parseInt\strokec9 (\strokec6 event\strokec9 .\strokec6 target\strokec9 .\strokec6 value\strokec9 ,\strokec6  \strokec14 10\strokec9 );\strokec6 \
+                    \strokec13 if\strokec6  \strokec9 (!\strokec6 isNaN\strokec9 (\strokec6 selectedIndex\strokec9 ))\strokec6  \strokec9 \{\strokec6 \
+                        showSlide\strokec9 (\strokec6 selectedIndex\strokec9 );\strokec6 \
+                    \strokec9 \}\strokec6 \
+                \strokec9 \});\strokec6 \
+            \strokec9 \}\strokec6 \
+\
+            document\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'keydown'\strokec9 ,\strokec6  \strokec9 (\strokec6 event\strokec9 )\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 event\strokec9 .\strokec6 key \strokec9 ===\strokec6  \strokec11 'ArrowLeft'\strokec6  \strokec9 ||\strokec6  event\strokec9 .\strokec6 key \strokec9 ===\strokec6  \strokec11 'PageUp'\strokec9 )\strokec6  \strokec9 \{\strokec6  \strokec13 if\strokec6  \strokec9 (!\strokec6 prevButton\strokec9 .\strokec6 disabled\strokec9 )\strokec6  prevButton\strokec9 .\strokec6 click\strokec9 ();\strokec6  \strokec9 \}\strokec6 \
+                \strokec13 else\strokec6  \strokec13 if\strokec6  \strokec9 (\strokec6 event\strokec9 .\strokec6 key \strokec9 ===\strokec6  \strokec11 'ArrowRight'\strokec6  \strokec9 ||\strokec6  event\strokec9 .\strokec6 key \strokec9 ===\strokec6  \strokec11 'PageDown'\strokec6  \strokec9 ||\strokec6  event\strokec9 .\strokec6 key \strokec9 ===\strokec6  \strokec11 ' '\strokec9 )\strokec6  \strokec9 \{\strokec6  \
+                    \strokec13 if\strokec6  \strokec9 (\strokec6 currentSlideIndex \strokec9 ===\strokec6  slides\strokec9 .\strokec6 length \strokec9 -\strokec6  \strokec14 1\strokec6  \strokec9 &&\strokec6  slides\strokec9 [\strokec6 currentSlideIndex\strokec9 ].\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                        showSlide\strokec9 (\strokec14 0\strokec9 );\strokec6  \
+                    \strokec9 \}\strokec6  \strokec13 else\strokec6  \strokec13 if\strokec6  \strokec9 (!\strokec6 nextButton\strokec9 .\strokec6 disabled\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                        nextButton\strokec9 .\strokec6 click\strokec9 ();\strokec6 \
+                    \strokec9 \}\strokec6 \
+                \strokec9 \}\strokec6 \
+            \strokec9 \});\strokec6 \
+            \
+            window\strokec9 .\strokec6 addEventListener\strokec9 (\strokec11 'resize'\strokec9 ,\strokec6  \strokec9 ()\strokec6  \strokec9 =>\strokec6  \strokec9 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 slides\strokec9 [\strokec6 currentSlideIndex\strokec9 ]\strokec6  \strokec9 &&\strokec6  slides\strokec9 [\strokec6 currentSlideIndex\strokec9 ].\strokec6 id \strokec9 ===\strokec6  \strokec11 'thank-you-slide'\strokec6  \strokec9 &&\strokec6  confettiCanvas \strokec9 &&\strokec6  confettiCanvas\strokec9 .\strokec6 parentElement\strokec9 )\strokec6  \strokec9 \{\strokec6 \
+                     \strokec13 const\strokec6  slideContent \strokec9 =\strokec6  confettiCanvas\strokec9 .\strokec6 parentElement\strokec9 ;\strokec6 \
+                     confettiCanvas\strokec9 .\strokec6 width \strokec9 =\strokec6  slideContent\strokec9 .\strokec6 offsetWidth\strokec9 ;\strokec6 \
+                     confettiCanvas\strokec9 .\strokec6 height \strokec9 =\strokec6  slideContent\strokec9 .\strokec6 offsetHeight\strokec9 ;\strokec6 \
+                \strokec9 \}\strokec6 \
+            \strokec9 \});\strokec6 \
+            \
+            populateSlideSelector\strokec9 ();\strokec6  \
+\
+            \strokec13 if\strokec6  \strokec9 (\strokec6 slides\strokec9 .\strokec6 length \strokec9 >\strokec6  \strokec14 0\strokec9 )\strokec6  showSlide\strokec9 (\strokec14 0\strokec9 );\strokec6  \
+            \strokec13 else\strokec6  \strokec9 \{\strokec6  \
+                prevButton\strokec9 .\strokec6 style\strokec9 .\strokec6 display \strokec9 =\strokec6  \strokec11 'none'\strokec9 ;\strokec6  \
+                nextButton\strokec9 .\strokec6 style\strokec9 .\strokec6 display \strokec9 =\strokec6  \strokec11 'none'\strokec9 ;\strokec6  \
+                \strokec13 if\strokec6  \strokec9 (\strokec6 slideSelectDropdown\strokec9 )\strokec6  slideSelectDropdown\strokec9 .\strokec6 style\strokec9 .\strokec6 display \strokec9 =\strokec6  \strokec11 'none'\strokec9 ;\strokec6 \
+            \strokec9 \}\strokec6 \
+        \strokec9 \});\strokec6 \
+    \strokec7 </\strokec4 script\strokec7 >\strokec6 \
+\
+\strokec7 </\strokec4 body\strokec7 >\strokec6 \
+\strokec7 </\strokec4 html\strokec7 >\strokec6 \
+\
+}
